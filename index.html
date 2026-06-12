@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The SHIFT Method — Fix Your Relationship With Money</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;width:100%}
+html,body{display:block!important;width:100%!important;max-width:100%!important;margin:0!important}
+:root{
+  --gold:#C8923A;--gold-l:#F5E6C8;--gold-d:#7A5520;
+  --ink:#141210;--ink2:#2A2520;--muted:#6E6860;--subtle:#A09890;
+  --bg:#F9F6F1;--card:#fff;--border:#E5DDD5;
+  --teal:#1F6B5E;--teal-l:#E0F2EE;
+  --coral:#B84E35;--coral-l:#FAEAE5;
+  --blue:#1E5F9A;--blue-l:#E6F1FB;
+  --green:#2E7D4F;--green-l:#E8F5EE;
+  --red:#C0392B;--red-l:#FDECEA;
+  --sb:260px;
+}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden;width:100%}
+.screen{display:none;width:100%;max-width:100%}
+
+/* ── ASSESSMENT INTRO (scoped azi-) ── */
+.azi-wrap{min-height:100vh;background:var(--ink2);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4rem 1.5rem;text-align:center;position:relative;overflow:hidden}
+.azi-wrap::before{content:'';position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(ellipse,rgba(200,146,58,.15),transparent 65%);pointer-events:none}
+.azi-back{position:absolute;top:1.5rem;left:1.5rem;background:none;border:none;color:rgba(255,255,255,.4);font-size:.85rem;cursor:pointer;font-family:'Outfit',sans-serif;transition:color .2s;z-index:2}
+.azi-back:hover{color:#fff}
+.azi-eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;background:rgba(200,146,58,.12);padding:.4rem 1.1rem;border-radius:50px;border:1px solid rgba(200,146,58,.2);display:inline-block;margin-bottom:1.5rem;position:relative;z-index:1}
+.azi-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,6vw,4rem);font-weight:700;color:#fff;line-height:1.12;margin-bottom:1.25rem;position:relative;z-index:1}
+.azi-h1 em{font-style:italic;color:var(--gold)}
+.azi-sub{font-size:1rem;color:rgba(255,255,255,.45);max-width:460px;margin:0 auto 2.5rem;line-height:1.8;position:relative;z-index:1}
+.azi-pills{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin-bottom:2.5rem;position:relative;z-index:1}
+.azi-pill{background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.11);border-radius:50px;padding:.42rem 1rem;font-size:.8rem;color:rgba(255,255,255,.45);font-weight:500}
+.azi-start{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#fff;border:none;padding:1.15rem 3rem;border-radius:50px;font-size:1.05rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .2s;position:relative;z-index:1}
+.azi-start:hover{background:#b07d2e;transform:translateY(-2px);box-shadow:0 8px 30px rgba(200,146,58,.35)}
+.azi-note{font-size:.78rem;color:rgba(255,255,255,.22);margin-top:1rem;position:relative;z-index:1}
+/* ── LANDING ── */
+
+
+
+
+
+
+/* ── NAV ── */
+.ln-nav{background:var(--ink2);padding:1.1rem 0;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,.06)}
+.ln-nav-inner{max-width:1100px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between}
+.ln-logo{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:#fff;letter-spacing:.04em}
+.ln-logo span{color:var(--gold)}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{font-size:.85rem;color:rgba(255,255,255,.5);text-decoration:none;transition:color .2s;font-weight:500}
+.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--gold);color:#fff;border:none;padding:.6rem 1.5rem;border-radius:50px;font-size:.85rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .2s;text-decoration:none;display:inline-block}
+.nav-cta:hover{background:#b07d2e;transform:translateY(-1px)}
+.ham{display:none;background:none;border:none;cursor:pointer;color:#fff;padding:4px}
+
+/* ── HERO ── */
+.hero{min-height:100vh;background:var(--ink2);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:7rem 0 5rem}
+.hero-bg{position:absolute;inset:0;pointer-events:none}
+.hero-bg-glow{position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:900px;height:600px;background:radial-gradient(ellipse,rgba(200,146,58,.13) 0%,transparent 65%)}
+.hero-bg-line{position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,146,58,.3),transparent)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;width:100%;max-width:1100px;margin:0 auto;padding:0 2rem}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(200,146,58,.12);border:1px solid rgba(200,146,58,.25);border-radius:50px;padding:.45rem 1.1rem;margin-bottom:1.5rem}
+.hero-eyebrow-dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.hero-eyebrow-text{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5vw,4.2rem);font-weight:700;line-height:1.1;color:#fff;margin-bottom:1.5rem}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.5);line-height:1.8;margin-bottom:2.5rem;max-width:460px}
+.hero-actions{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#fff;border:none;padding:1.1rem 2.5rem;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .2s;text-decoration:none}
+.btn-primary:hover{background:#b07d2e;transform:translateY(-2px);box-shadow:0 8px 30px rgba(200,146,58,.3)}
+.btn-primary svg{transition:transform .2s}
+.btn-primary:hover svg{transform:translateX(4px)}
+.hero-note{font-size:12px;color:rgba(255,255,255,.3);display:flex;align-items:center;gap:6px}
+.hero-note::before{content:'✦';color:var(--gold);font-size:8px}
+.hero-visual{position:relative}
+.hero-card-stack{position:relative;height:420px}
+.h-card{background:rgba(255,255,255,.04);border:.5px solid rgba(255,255,255,.1);border-radius:20px;padding:1.5rem;position:absolute;backdrop-filter:blur(10px)}
+.h-card.main{width:100%;top:0;left:0;right:0}
+.h-card.float-1{width:88%;bottom:20px;left:6%;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.h-card.float-2{width:78%;bottom:-20px;left:11%;opacity:.6}
+.h-card-label{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:.75rem}
+.pattern-name{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:#fff;margin-bottom:.4rem;font-weight:600}
+.pattern-sub{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.55;margin-bottom:1.2rem}
+.stage-dots{display:flex;gap:6px;margin-bottom:1rem}
+.stage-dot{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.3);background:rgba(255,255,255,.05);border:.5px solid rgba(255,255,255,.08)}
+.stage-dot.active{background:rgba(200,146,58,.2);border-color:rgba(200,146,58,.4);color:var(--gold)}
+.h-card-insight{background:rgba(200,146,58,.08);border:.5px solid rgba(200,146,58,.2);border-radius:10px;padding:.75rem;font-size:.82rem;color:rgba(255,255,255,.55);line-height:1.55}
+.trust-row{display:flex;flex-wrap:wrap;gap:1.5rem;margin-top:2rem}
+.trust-item{display:flex;align-items:center;gap:7px;font-size:.82rem;color:rgba(255,255,255,.35);font-weight:500}
+.trust-item svg{color:var(--gold);flex-shrink:0}
+
+/* ── SECTION SHARED ── */
+.section{padding:6rem 0}
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 2rem}
+.container-narrow{width:100%;max-width:760px;margin:0 auto;padding:0 2rem}
+.s-eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:.75rem}
+.s-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:700;line-height:1.2;color:var(--ink);margin-bottom:.75rem}
+.s-sub{font-size:.95rem;color:var(--muted);line-height:1.75;max-width:560px}
+
+/* ── PROBLEM ── */
+.problem-section{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.problem-list{display:flex;flex-direction:column;gap:16px;margin-top:2rem}
+.problem-item{display:flex;gap:14px;align-items:flex-start}
+.p-icon{width:36px;height:36px;border-radius:10px;background:var(--coral-l);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem}
+.p-title{font-size:.93rem;font-weight:600;color:var(--ink);margin-bottom:3px}
+.p-text{font-size:.85rem;color:var(--muted);line-height:1.6}
+.problem-truth{background:var(--ink2);border-radius:20px;padding:2.25rem;position:relative;overflow:hidden}
+.problem-truth::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:var(--gold);opacity:.06}
+.pt-quote{font-family:'Cormorant Garamond',serif;font-size:1.5rem;line-height:1.55;color:#fff;font-style:italic;margin-bottom:1.25rem}
+.pt-quote span{color:var(--gold)}
+.pt-author{font-size:.82rem;color:rgba(255,255,255,.35);font-weight:500}
+.pt-divider{height:1px;background:rgba(255,255,255,.08);margin:1rem 0}
+
+/* ── FRAMEWORK ── */
+.framework-section{background:var(--bg)}
+.framework-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:3rem}
+.f-card{background:var(--card);border:.5px solid var(--border);border-radius:16px;padding:1.5rem 1.25rem;text-align:center;transition:all .2s;cursor:default}
+.f-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.f-letter{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;line-height:1;margin-bottom:.5rem}
+.f-name{font-size:.8rem;font-weight:600;color:var(--ink);margin-bottom:.5rem}
+.f-desc{font-size:.78rem;color:var(--muted);line-height:1.55}
+.f-tag{display:inline-block;font-size:9px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:20px;margin-bottom:.6rem}
+.framework-bottom{background:var(--ink2);border-radius:20px;padding:2.5rem;margin-top:3rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+.fb-left{}
+.fb-title{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:#fff;margin-bottom:.75rem;line-height:1.3}
+.fb-text{font-size:.9rem;color:rgba(255,255,255,.45);line-height:1.75}
+.fb-right{text-align:center}
+.fb-cta-note{font-size:.82rem;color:rgba(255,255,255,.3);margin-top:.75rem}
+
+/* ── PATTERNS ── */
+.patterns-section{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.patterns-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:2.5rem}
+.pattern-card{background:var(--bg);border:.5px solid var(--border);border-radius:16px;padding:1.5rem;transition:all .2s}
+.pattern-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+.pc-icon{font-size:1.75rem;margin-bottom:.75rem}
+.pc-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--ink);margin-bottom:.4rem}
+.pc-trigger{font-size:.82rem;font-weight:600;color:var(--gold);margin-bottom:.4rem}
+.pc-desc{font-size:.83rem;color:var(--muted);line-height:1.6}
+.patterns-cta{text-align:center;margin-top:2.5rem}
+.patterns-cta-text{font-size:.93rem;color:var(--muted);margin-bottom:1.25rem}
+
+/* ── TRANSFORMATION ── */
+.transform-section{background:var(--bg)}
+.transform-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2.5rem}
+.before-after{background:var(--card);border:.5px solid var(--border);border-radius:16px;overflow:hidden}
+.ba-header{padding:1rem 1.5rem;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.ba-header.before{background:var(--coral-l);color:var(--coral)}
+.ba-header.after{background:var(--teal-l);color:var(--teal)}
+.ba-list{padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:10px}
+.ba-item{display:flex;gap:10px;align-items:flex-start;font-size:.87rem;color:var(--muted);line-height:1.55}
+.ba-item::before{flex-shrink:0;margin-top:2px;font-size:.85rem}
+.before .ba-item::before{content:'✕';color:var(--coral)}
+.after .ba-item::before{content:'✓';color:var(--teal);font-weight:700}
+
+/* ── SOCIAL PROOF ── */
+.proof-section{background:var(--ink2)}
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:2.5rem}
+.proof-card{background:rgba(255,255,255,.04);border:.5px solid rgba(255,255,255,.08);border-radius:16px;padding:1.5rem}
+.stars{color:var(--gold);font-size:12px;margin-bottom:.75rem;letter-spacing:2px}
+.proof-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:rgba(255,255,255,.7);line-height:1.65;margin-bottom:1rem}
+.proof-author{font-size:.8rem;color:rgba(255,255,255,.3);font-weight:500}
+.proof-pattern{font-size:.78rem;color:var(--gold);margin-top:3px}
+
+/* ── FAQ ── */
+.faq-section{background:var(--card);border-top:1px solid var(--border)}
+.faq-list{margin-top:2.5rem;display:flex;flex-direction:column;gap:8px;max-width:720px}
+.faq-item{border:.5px solid var(--border);border-radius:12px;overflow:hidden;background:var(--bg)}
+.faq-q{padding:1.1rem 1.4rem;font-weight:500;font-size:.93rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;user-select:none;color:var(--ink)}
+.faq-q::after{content:'+';font-size:1.2rem;color:var(--gold);transition:transform .2s;flex-shrink:0;font-weight:300}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{padding:0 1.4rem;max-height:0;overflow:hidden;font-size:.88rem;color:var(--muted);line-height:1.75;transition:max-height .35s ease,padding .3s}
+.faq-item.open .faq-a{max-height:300px;padding:0 1.4rem 1.25rem}
+
+/* ── FINAL CTA ── */
+.final-section{background:var(--ink2);padding:8rem 0;text-align:center;position:relative;overflow:hidden}
+.final-section::before{content:'';position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:800px;height:600px;background:radial-gradient(ellipse,rgba(200,146,58,.1),transparent 65%);pointer-events:none}
+.final-eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1rem}
+.final-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,3.8rem);font-weight:700;color:#fff;margin-bottom:1.25rem;line-height:1.15;max-width:640px;margin-left:auto;margin-right:auto}
+.final-title em{font-style:italic;color:var(--gold)}
+.final-sub{font-size:1rem;color:rgba(255,255,255,.4);margin-bottom:3rem;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.75}
+.final-free-note{font-size:.82rem;color:rgba(255,255,255,.25);margin-top:1rem}
+
+/* ── FOOTER ── */
+.ln-footer{background:#0e0c0a;padding:2.5rem 0;border-top:1px solid rgba(255,255,255,.05)}
+.footer-inner{max-width:1100px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.3)}
+.footer-logo span{color:var(--gold)}
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a{font-size:.8rem;color:rgba(255,255,255,.2);text-decoration:none}
+.footer-copy{font-size:.8rem;color:rgba(255,255,255,.15);width:100%;margin-top:.5rem}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  .problem-grid{grid-template-columns:1fr}
+  .framework-grid{grid-template-columns:1fr 1fr}
+  .patterns-grid{grid-template-columns:1fr 1fr}
+  .transform-grid{grid-template-columns:1fr}
+  .proof-grid{grid-template-columns:1fr 1fr}
+  .framework-bottom{grid-template-columns:1fr}
+  .fb-right{text-align:left}
+  .nav-links{display:none}
+}
+@media(max-width:600px){
+  .framework-grid{grid-template-columns:1fr 1fr}
+  .patterns-grid{grid-template-columns:1fr}
+  .proof-grid{grid-template-columns:1fr}
+  .hero{padding:5rem 0 4rem}
+  .section{padding:4rem 0}
+  .ham{display:block}
+}
+
+/* ── ASSESSMENT ── */
+
+
+
+html,
+
+
+/* ── NAV ── */
+.azz-deadnav{background:var(--ink2);padding:1rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:720px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:#fff}
+.logo span{color:var(--gold)}
+.back-link{font-size:.82rem;color:rgba(255,255,255,.4);text-decoration:none;display:flex;align-items:center;gap:5px;transition:color .2s}
+.back-link:hover{color:rgba(255,255,255,.7)}
+
+/* ── INTRO SCREEN ── */
+.intro{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem 1.5rem;text-align:center;background:var(--ink2);position:relative;overflow:hidden}
+.intro::before{content:'';position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(ellipse,rgba(200,146,58,.15),transparent 65%);pointer-events:none}
+.intro-eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.25rem;background:rgba(200,146,58,.12);padding:.4rem 1.1rem;border-radius:50px;border:1px solid rgba(200,146,58,.2)}
+.intro h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,6vw,3.8rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:1.25rem;max-width:600px}
+.intro h1 em{font-style:italic;color:var(--gold)}
+.intro-sub{font-size:1rem;color:rgba(255,255,255,.5);max-width:480px;margin:0 auto 2.5rem;line-height:1.75}
+.meta-pills{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-bottom:2.5rem}
+.meta-pill{background:rgba(255,255,255,.06);border:.5px solid rgba(255,255,255,.12);border-radius:50px;padding:.45rem 1.1rem;font-size:.82rem;color:rgba(255,255,255,.5);font-weight:500}
+.start-btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#fff;border:none;padding:1.15rem 3rem;border-radius:50px;font-size:1.05rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .2s}
+.start-btn:hover{background:#b07d2e;transform:translateY(-2px);box-shadow:0 8px 30px rgba(200,146,58,.35)}
+.start-btn svg{transition:transform .2s}
+.start-btn:hover svg{transform:translateX(4px)}
+.intro-note{font-size:.8rem;color:rgba(255,255,255,.25);margin-top:1rem}
+
+/* ── QUIZ SCREEN ── */
+.quiz-screen{min-height:100vh;padding:3rem 1.5rem 5rem;background:var(--bg)}
+.quiz-wrap{max-width:660px;margin:0 auto}
+.prog-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem}
+.prog-label{font-size:.82rem;color:var(--subtle);font-weight:500}
+.prog-pct{font-size:.82rem;color:var(--gold);font-weight:600}
+.prog-bar{height:4px;background:var(--border);border-radius:4px;margin-bottom:2.25rem;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--gold),#e8a84a);border-radius:4px;transition:width .45s cubic-bezier(.4,0,.2,1)}
+.q-card{background:var(--card);border:.5px solid var(--border);border-radius:20px;padding:2.5rem;animation:up .3s ease both;box-shadow:0 4px 24px rgba(0,0,0,.05)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-counter{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--subtle);font-weight:600;margin-bottom:.85rem}
+.q-text{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;line-height:1.4;color:var(--ink);margin-bottom:2rem}
+.options{display:flex;flex-direction:column;gap:10px}
+.opt{background:var(--bg);border:.5px solid var(--border);border-radius:12px;padding:1rem 1.25rem;cursor:pointer;display:flex;align-items:center;gap:13px;font-size:.93rem;color:var(--ink);transition:all .15s;text-align:left;width:100%;font-family:'Outfit',sans-serif}
+.opt:hover{border-color:var(--gold);background:var(--gold-l);transform:translateX(3px)}
+.opt.sel{border-color:var(--gold);background:var(--gold-l);font-weight:500}
+.opt-ltr{width:28px;height:28px;border-radius:50%;background:var(--card);border:.5px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;flex-shrink:0;color:var(--muted);transition:all .15s}
+.opt.sel .opt-ltr{background:var(--gold);border-color:var(--gold);color:#fff}
+.q-footer{display:flex;align-items:center;justify-content:space-between;margin-top:1.75rem}
+.q-hint{font-size:.8rem;color:var(--subtle)}
+.next-btn{background:var(--ink2);color:#fff;border:none;padding:.85rem 2rem;border-radius:50px;font-size:.9rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .2s;opacity:.25;pointer-events:none;display:flex;align-items:center;gap:8px}
+.next-btn.on{opacity:1;pointer-events:auto}
+.next-btn.on:hover{background:var(--ink);transform:translateY(-1px)}
+
+/* ── EMAIL GATE ── */
+.gate-screen{display:flex;min-height:100vh;background:var(--ink2);align-items:center;justify-content:center;padding:3rem 1.5rem;position:relative;overflow:hidden}
+.gate-screen::before{content:'';position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(200,146,58,.12),transparent 65%);pointer-events:none}
+.gate-card{background:var(--card);border:.5px solid var(--border);border-radius:24px;padding:3rem 2.5rem;max-width:480px;width:100%;text-align:center;position:relative;z-index:1;animation:up .4s ease both}
+.gate-icon{font-size:2.5rem;margin-bottom:1.25rem;display:block}
+.gate-card h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--ink);margin-bottom:.75rem;line-height:1.2}
+.gate-card p{font-size:.9rem;color:var(--muted);margin-bottom:2rem;line-height:1.7}
+.gate-input{width:100%;border:.5px solid var(--border);border-radius:10px;padding:.9rem 1.1rem;font-size:.93rem;font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);margin-bottom:10px;display:block;transition:border-color .15s}
+.gate-input:focus{outline:none;border-color:var(--gold)}
+.gate-input::placeholder{color:var(--subtle)}
+.reveal-btn{width:100%;background:var(--gold);color:#fff;border:none;padding:1.05rem;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;margin-top:6px;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.reveal-btn:hover{background:#b07d2e}
+.privacy{font-size:11px;color:var(--subtle);margin-top:.75rem}
+
+/* ── RESULT SCREEN ── */
+.result-screen{padding:2.5rem 1.5rem 5rem;background:var(--bg);min-height:100vh}
+.result-wrap{max-width:680px;margin:0 auto;animation:up .4s ease both}
+.res-hero{background:var(--ink2);border-radius:22px;padding:2.75rem 2.5rem;text-align:center;margin-bottom:1.25rem;position:relative;overflow:hidden}
+.res-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(200,146,58,.2),transparent 70%);pointer-events:none}
+.res-badge{display:inline-block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);background:rgba(200,146,58,.15);border:1px solid rgba(200,146,58,.2);padding:4px 16px;border-radius:50px;margin-bottom:1rem}
+.res-pattern{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:#fff;line-height:1.2;margin-bottom:.5rem}
+.res-sub{font-size:.9rem;color:rgba(255,255,255,.45);max-width:420px;margin:0 auto;line-height:1.65}
+.ins-card{background:var(--card);border:.5px solid var(--border);border-radius:16px;padding:1.6rem;margin-bottom:12px}
+.ins-lbl{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--subtle);font-weight:600;margin-bottom:.5rem}
+.ins-body{font-size:.92rem;color:var(--ink);line-height:1.75}
+.stage-row{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:1.25rem 0}
+.s-pill{background:var(--bg);border:.5px solid var(--border);border-radius:10px;padding:.7rem .3rem;text-align:center}
+.s-pill.hi{border-color:var(--gold);background:var(--gold-l)}
+.s-letter{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--gold);line-height:1}
+.s-name{font-size:9px;color:var(--muted);margin-top:3px;font-weight:500}
+.prompt-block{background:var(--bg);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:1rem 1.1rem;font-size:.83rem;color:var(--muted);line-height:1.75;margin-top:.75rem;font-family:'Outfit',sans-serif;cursor:pointer;transition:background .15s;position:relative}
+.prompt-block:hover{background:var(--gold-l)}
+.copy-hint{font-size:.75rem;color:var(--gold);margin-top:.5rem;font-weight:500}
+.copy-hint.done{color:var(--teal)}
+
+/* ── $99 CTA ── */
+.upgrade-card{background:var(--ink2);border-radius:22px;padding:2.75rem 2.5rem;margin-top:1.5rem;text-align:center;position:relative;overflow:hidden}
+.upgrade-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(200,146,58,.18),transparent 70%);pointer-events:none}
+.uc-eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:.85rem}
+.uc-title{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:#fff;line-height:1.25;margin-bottom:.75rem;max-width:460px;margin-left:auto;margin-right:auto}
+.uc-sub{font-size:.88rem;color:rgba(255,255,255,.45);line-height:1.75;margin-bottom:2rem;max-width:440px;margin-left:auto;margin-right:auto}
+.price-row{display:flex;align-items:baseline;justify-content:center;gap:12px;margin-bottom:.5rem}
+.price-val{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:700;color:#fff;line-height:1}
+.price-orig{font-size:1.2rem;color:rgba(255,255,255,.3);text-decoration:line-through}
+.price-note{font-size:.8rem;color:rgba(255,255,255,.3);margin-bottom:2rem}
+.includes-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:1.5rem 0;text-align:left}
+.inc-row{display:flex;align-items:flex-start;gap:8px;font-size:.83rem;color:rgba(255,255,255,.5);line-height:1.45}
+.inc-row::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0;margin-top:1px}
+.unlock-btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#fff;border:none;padding:1.15rem 2.5rem;border-radius:50px;font-size:1.05rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .2s;width:100%;justify-content:center;max-width:420px}
+.unlock-btn:hover{background:#b07d2e;transform:translateY(-2px);box-shadow:0 8px 30px rgba(200,146,58,.3)}
+.uc-guarantee{font-size:.8rem;color:rgba(255,255,255,.25);margin-top:.85rem}
+.retake-link{font-size:.82rem;color:var(--subtle);text-align:center;margin-top:1.5rem;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.retake-link:hover{color:var(--gold)}
+
+@media(max-width:600px){
+  .intro h1{font-size:2.2rem}
+  .q-card{padding:1.75rem}
+  .q-text{font-size:1.25rem}
+  .gate-card{padding:2rem 1.5rem}
+  .res-hero{padding:2rem 1.5rem}
+  .upgrade-card{padding:2rem 1.5rem}
+  .includes-grid{grid-template-columns:1fr}
+  .stage-row{grid-template-columns:repeat(5,1fr);gap:5px}
+  .s-pill{padding:.5rem .2rem}
+  .s-letter{font-size:1.1rem}
+  .s-name{font-size:8px}
+}
+
+/* ── WORKBOOK ── */
+
+
+
+#sb{width:var(--sb);min-width:var(--sb);background:var(--ink2);min-height:100vh;position:fixed;top:0;left:0;bottom:0;display:flex;flex-direction:column;z-index:100;overflow-y:auto;transition:transform .28s ease}
+.sb-logo{padding:1.75rem 1.5rem 1.25rem;border-bottom:1px solid rgba(255,255,255,.07)}
+.sb-brand{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:#fff;line-height:1}
+.sb-tag{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:3px;font-weight:500}
+.sb-prog{padding:1rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.07)}
+.sb-prog-lbl{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:7px;font-weight:500}
+.sb-prog-track{height:3px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.sb-prog-bar{height:100%;background:var(--gold);border-radius:3px;transition:width .4s}
+.sb-prog-pct{font-size:11px;color:var(--gold);margin-top:4px;font-weight:500}
+.sb-nav{flex:1;padding:.75rem 0}
+.sb-grp{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.22);padding:.5rem 1.5rem .2rem;font-weight:600}
+.sb-btn{width:100%;display:flex;align-items:center;gap:10px;padding:.6rem 1.5rem;cursor:pointer;border:none;background:none;border-left:3px solid transparent;transition:all .15s;text-align:left;font-family:'Outfit',sans-serif}
+.sb-btn:hover{background:rgba(255,255,255,.05)}
+.sb-btn.on{background:rgba(201,148,58,.12);border-left-color:var(--gold)}
+.sb-ico{width:27px;height:27px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:700;flex-shrink:0}
+.sb-info{flex:1;min-width:0}
+.sb-name{font-size:12px;font-weight:500;color:rgba(255,255,255,.65);line-height:1.2}
+.sb-sub{font-size:9px;color:rgba(255,255,255,.28);margin-top:1px}
+.sb-btn.on .sb-name{color:#fff}
+.sb-dot{width:13px;height:13px;border-radius:50%;background:rgba(255,255,255,.08);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:7px;color:transparent;transition:all .2s}
+.sb-dot.done{background:var(--teal);color:#fff}
+.sb-foot{padding:1rem 1.5rem;border-top:1px solid rgba(255,255,255,.07)}
+.sb-upsell{display:block;width:100%;background:var(--gold);color:#fff;text-align:center;padding:.65rem;border-radius:9px;font-size:11px;font-weight:600;cursor:pointer;border:none;font-family:'Outfit',sans-serif}
+#main{margin-left:var(--sb);flex:1;min-height:100vh;display:flex;flex-direction:column}
+.topbar{background:var(--card);border-bottom:.5px solid var(--border);padding:.85rem 2.25rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50;gap:1rem}
+.tb-left{display:flex;align-items:center;gap:10px}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;color:var(--ink);flex-shrink:0}
+.tb-stage{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--subtle);font-weight:500}
+.tb-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--ink)}
+.tb-right{display:flex;gap:8px;flex-shrink:0}
+.btn-sm{font-size:11px;padding:.4rem .9rem;border-radius:20px;border:.5px solid var(--border);background:none;cursor:pointer;font-family:'Outfit',sans-serif;color:var(--muted);transition:all .15s;font-weight:500;white-space:nowrap}
+.btn-sm:hover{border-color:var(--gold);color:var(--gold)}
+.btn-sm.gold{background:var(--gold);color:#fff;border-color:var(--gold)}
+.page{max-width:760px;margin:0 auto;padding:2.5rem 2rem 6rem;width:100%}
+.welcome{text-align:center;padding:3rem 1rem}
+.wlc-mark{font-family:'Cormorant Garamond',serif;font-size:4.5rem;font-weight:700;color:var(--gold);line-height:1}
+.wlc-h{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:var(--ink);margin:.5rem 0 .9rem;line-height:1.2}
+.wlc-p{font-size:.93rem;color:var(--muted);max-width:460px;margin:0 auto 2.5rem;line-height:1.75}
+.stage-tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;max-width:520px;margin:0 auto 2rem}
+.tile{background:var(--card);border:.5px solid var(--border);border-radius:13px;padding:.9rem .4rem;text-align:center;cursor:pointer;transition:all .18s}
+.tile:hover{border-color:var(--gold);transform:translateY(-2px)}
+.tile-l{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;line-height:1}
+.tile-n{font-size:8px;color:var(--muted);margin-top:3px;font-weight:500}
+.how-card{background:var(--card);border:.5px solid var(--border);border-radius:16px;padding:1.6rem 1.75rem;max-width:520px;margin:0 auto 2rem;text-align:left}
+.how-lbl{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--subtle);font-weight:600;margin-bottom:.8rem}
+.how-row{font-size:.88rem;color:var(--muted);margin-bottom:.55rem;display:flex;gap:8px}
+.how-row span{color:var(--gold);font-weight:600;flex-shrink:0}
+.wb-startbtn{background:var(--ink2);color:#fff;border:none;padding:.95rem 2.75rem;border-radius:50px;font-size:.95rem;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif}
+.s-cover{background:var(--ink2);border-radius:18px;padding:2.25rem;margin-bottom:2.25rem;position:relative;overflow:hidden}
+.s-cover::after{content:'';position:absolute;top:-50px;right:-50px;width:180px;height:180px;border-radius:50%;background:var(--gold);opacity:.05;pointer-events:none}
+.s-ltr{font-family:'Cormorant Garamond',serif;font-size:4.5rem;font-weight:700;line-height:1;margin-bottom:.3rem}
+.s-days{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.3);font-weight:500;margin-bottom:.3rem}
+.wb-sname{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:#fff;margin-bottom:.6rem}
+.s-desc{font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.7;max-width:520px}
+.s-prog-row{display:flex;align-items:center;gap:12px;margin-top:1.5rem}
+.s-prog-track{flex:1;height:3px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.s-prog-fill{height:100%;background:var(--gold);border-radius:3px;transition:width .4s}
+.s-prog-lbl{font-size:10px;color:rgba(255,255,255,.35);font-weight:500;white-space:nowrap}
+.mod{margin-bottom:2.5rem}
+.mod-hdr{display:flex;align-items:flex-start;gap:11px;margin-bottom:1.1rem}
+.mod-num{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;flex-shrink:0;margin-top:2px}
+.mod-title{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:var(--ink);line-height:1.3}
+.mod-sub{font-size:.82rem;color:var(--muted);margin-top:1px}
+.body-t{font-size:.9rem;color:var(--muted);line-height:1.75;margin-bottom:.9rem}
+.callout{border-radius:0 12px 12px 0;padding:.95rem 1.15rem;margin:.9rem 0;border-left:3px solid var(--gold);background:var(--gold-l)}
+.callout.teal{border-left-color:var(--teal);background:var(--teal-l)}
+.callout.coral{border-left-color:var(--coral);background:var(--coral-l)}
+.callout.dark{background:var(--ink2);border-left-color:var(--gold)}
+.c-lbl{font-size:8px;letter-spacing:.15em;text-transform:uppercase;font-weight:600;color:var(--gold-d);margin-bottom:4px}
+.callout.teal .c-lbl{color:var(--teal)}
+.callout.dark .c-lbl{color:var(--gold)}
+.c-txt{font-size:.87rem;line-height:1.7;color:var(--ink2)}
+.callout.dark .c-txt{color:rgba(255,255,255,.6)}
+.ex{background:var(--card);border:.5px solid var(--border);border-radius:14px;padding:1.35rem;margin:.9rem 0}
+.ex-lbl{font-size:8px;letter-spacing:.13em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:.4rem}
+.ex-title{font-size:.93rem;font-weight:600;color:var(--ink);margin-bottom:.3rem}
+.ex-hint{font-size:.82rem;color:var(--subtle);margin-bottom:.75rem;line-height:1.55}
+.ex textarea{width:100%;border:.5px solid var(--border);border-radius:9px;padding:.8rem .95rem;font-size:.87rem;font-family:'Outfit',sans-serif;color:var(--ink);background:var(--bg);resize:vertical;min-height:80px;transition:border-color .15s;line-height:1.6}
+.ex textarea:focus{outline:none;border-color:var(--gold)}
+.ex textarea::placeholder{color:var(--subtle)}
+.ex-saved{font-size:9px;color:var(--subtle);margin-top:4px;text-align:right;height:14px;transition:color .3s}
+.ex-saved.ok{color:var(--teal)}
+.prompt-box{background:var(--bg);border:.5px solid var(--border);border-radius:12px;margin:.9rem 0;overflow:hidden}
+.prompt-top{display:flex;align-items:center;justify-content:space-between;padding:.6rem .95rem;border-bottom:.5px solid var(--border)}
+.p-tag{font-size:8px;letter-spacing:.15em;text-transform:uppercase;font-weight:600;color:var(--gold-d);background:var(--gold-l);padding:3px 9px;border-radius:20px}
+.copy-btn{font-size:10px;font-weight:500;color:var(--muted);background:none;border:.5px solid var(--border);border-radius:20px;padding:3px 11px;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .15s}
+.copy-btn:hover{border-color:var(--gold);color:var(--gold)}
+.copy-btn.ok{background:var(--teal-l);color:var(--teal);border-color:var(--teal)}
+.prompt-txt{padding:.85rem .95rem;font-size:.82rem;color:var(--muted);line-height:1.7}
+.stage-nav{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1.75rem;border-top:.5px solid var(--border);gap:10px}
+.nav-btn{display:flex;align-items:center;gap:7px;padding:.7rem 1.35rem;border-radius:50px;border:.5px solid var(--border);background:none;cursor:pointer;font-family:'Outfit',sans-serif;font-size:.87rem;font-weight:500;color:var(--muted);transition:all .18s}
+.nav-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.nav-btn.primary{background:var(--gold);color:#fff;border-color:var(--gold)}
+.nav-btn.primary:hover{background:#b07d2e}
+.nav-btn:disabled{opacity:.3;cursor:not-allowed;pointer-events:none}
+
+/* ── TOOL STYLES ── */
+.tool{background:var(--card);border:.5px solid var(--border);border-radius:16px;overflow:hidden;margin:1.25rem 0}
+.tool-header{background:var(--ink2);padding:1.1rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.tool-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:#fff}
+.tool-badge{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);background:rgba(201,148,58,.15);padding:3px 10px;border-radius:20px;font-weight:600}
+.tool-body{padding:1.5rem}
+.tool-row{display:grid;gap:12px;margin-bottom:12px}
+.tool-row.cols2{grid-template-columns:1fr 1fr}
+.tool-row.cols3{grid-template-columns:1fr 1fr 1fr}
+.tool-row.cols4{grid-template-columns:1fr 1fr 1fr 1fr}
+.field{display:flex;flex-direction:column;gap:4px}
+.field label{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--subtle);font-weight:600}
+.field input,.field select{border:.5px solid var(--border);border-radius:8px;padding:.6rem .85rem;font-size:.88rem;font-family:'Outfit',sans-serif;color:var(--ink);background:var(--bg);transition:border-color .15s;width:100%}
+.field input:focus,.field select:focus{outline:none;border-color:var(--gold)}
+.field input[type=number]{-moz-appearance:textfield}
+.field input[type=number]::-webkit-outer-spin-button,.field input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}
+.tool-btn{background:var(--gold);color:#fff;border:none;padding:.65rem 1.5rem;border-radius:8px;font-size:.85rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:background .2s;margin-top:4px}
+.tool-btn:hover{background:#b07d2e}
+.tool-btn.outline{background:none;color:var(--muted);border:.5px solid var(--border)}
+.tool-btn.outline:hover{border-color:var(--coral);color:var(--coral)}
+.tool-btn.teal{background:var(--teal)}
+.tool-btn.teal:hover{background:#175a4e}
+.tool-divider{height:.5px;background:var(--border);margin:1.25rem 0}
+.results-panel{background:var(--bg);border-radius:12px;padding:1.25rem;margin-top:1.25rem}
+.results-title{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--subtle);font-weight:600;margin-bottom:.85rem}
+.stat-grid{display:grid;gap:10px}
+.stat-grid.cols2{grid-template-columns:1fr 1fr}
+.stat-grid.cols3{grid-template-columns:1fr 1fr 1fr}
+.stat{background:var(--card);border:.5px solid var(--border);border-radius:10px;padding:1rem}
+.stat-label{font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--subtle);font-weight:600;margin-bottom:4px}
+.stat-value{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--ink);line-height:1}
+.stat-note{font-size:10px;color:var(--muted);margin-top:3px}
+.stat.good .stat-value{color:var(--teal)}
+.stat.bad .stat-value{color:var(--coral)}
+.stat.gold .stat-value{color:var(--gold)}
+.bar-chart{margin-top:1rem}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.bar-label{font-size:11px;color:var(--muted);width:130px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{flex:1;height:8px;background:var(--border);border-radius:4px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;transition:width .6s ease}
+.bar-amt{font-size:11px;color:var(--ink);font-weight:500;width:70px;text-align:right;flex-shrink:0}
+.tag{display:inline-block;font-size:9px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;padding:2px 8px;border-radius:20px}
+.tag.over{background:var(--red-l);color:var(--red)}
+.tag.ok{background:var(--green-l);color:var(--green)}
+.tag.warn{background:var(--gold-l);color:var(--gold-d)}
+
+/* Debt table */
+.debt-table{width:100%;border-collapse:collapse;margin-top:.75rem;font-size:.83rem}
+.debt-table th{background:var(--ink2);color:var(--gold);font-weight:600;padding:.6rem .75rem;text-align:left;font-size:.76rem;letter-spacing:.04em}
+.debt-table td{padding:.6rem .75rem;border-bottom:.5px solid var(--border);vertical-align:middle}
+.debt-table tr:last-child td{border-bottom:none}
+.debt-table tr:nth-child(even) td{background:var(--bg)}
+.debt-table .num{text-align:right;font-weight:500;color:var(--ink)}
+.debt-table .del-btn{background:none;border:none;cursor:pointer;color:var(--subtle);font-size:14px;padding:2px 6px;border-radius:4px;transition:color .15s}
+.debt-table .del-btn:hover{color:var(--coral)}
+.payoff-result{background:var(--ink2);border-radius:12px;padding:1.25rem;margin-top:1rem;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pr-item{text-align:center}
+.pr-label{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);font-weight:500;margin-bottom:6px}
+.pr-value{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:#fff;line-height:1}
+.pr-note{font-size:10px;color:rgba(255,255,255,.4);margin-top:3px}
+.pr-item.highlight .pr-value{color:var(--gold)}
+.timeline-bar{display:flex;align-items:center;gap:8px;margin-top:.85rem}
+.tl-label{font-size:10px;color:rgba(255,255,255,.4);width:80px;flex-shrink:0}
+.tl-track{flex:1;height:6px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.tl-fill{height:100%;border-radius:3px;background:var(--gold);transition:width .6s ease}
+.tl-date{font-size:10px;color:var(--gold);font-weight:500;white-space:nowrap}
+
+/* Net worth */
+.nw-section{margin-bottom:1.25rem}
+.nw-section-label{font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:.5rem .75rem;border-radius:7px;margin-bottom:.65rem;display:inline-block}
+.nw-item-row{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:center;margin-bottom:7px}
+.nw-item-row input{border:.5px solid var(--border);border-radius:8px;padding:.55rem .8rem;font-size:.87rem;font-family:'Outfit',sans-serif;color:var(--ink);background:var(--bg);width:100%}
+.nw-item-row input:focus{outline:none;border-color:var(--gold)}
+.nw-del{background:none;border:none;cursor:pointer;color:var(--subtle);font-size:13px;padding:4px;transition:color .15s}
+.nw-del:hover{color:var(--coral)}
+.add-row-btn{background:none;border:.5px dashed var(--border);border-radius:8px;padding:.5rem;font-size:.82rem;color:var(--muted);cursor:pointer;width:100%;font-family:'Outfit',sans-serif;transition:all .15s;margin-top:4px}
+.add-row-btn:hover{border-color:var(--gold);color:var(--gold)}
+.nw-total{display:flex;justify-content:space-between;align-items:center;padding:.75rem .9rem;border-radius:10px;margin-top:.5rem;font-weight:600;font-size:.93rem}
+.nw-big{background:var(--ink2);border-radius:14px;padding:1.5rem;text-align:center;margin-top:1.25rem}
+.nw-big-label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.3);font-weight:500;margin-bottom:.5rem}
+.nw-big-value{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:700;line-height:1;margin-bottom:.3rem}
+.nw-big-note{font-size:.85rem;color:rgba(255,255,255,.4)}
+
+/* Subscription audit */
+.sub-row{display:grid;grid-template-columns:1fr auto auto auto;gap:8px;align-items:center;margin-bottom:7px}
+.sub-row input{border:.5px solid var(--border);border-radius:8px;padding:.55rem .8rem;font-size:.87rem;font-family:'Outfit',sans-serif;color:var(--ink);background:var(--bg);width:100%}
+.sub-row input:focus{outline:none;border-color:var(--gold)}
+.sub-toggle{border:none;border-radius:20px;font-size:10px;font-weight:600;cursor:pointer;padding:4px 10px;font-family:'Outfit',sans-serif;transition:all .15s;white-space:nowrap}
+.sub-toggle.keep{background:var(--green-l);color:var(--green)}
+.sub-toggle.cancel{background:var(--red-l);color:var(--red)}
+
+/* 5-account */
+.account-card{background:var(--card);border:.5px solid var(--border);border-radius:12px;padding:1.1rem 1.25rem;margin-bottom:10px;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center}
+.acc-num{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;flex-shrink:0}
+.acc-info{min-width:0}
+.acc-name{font-weight:600;font-size:.9rem;color:var(--ink)}
+.acc-desc{font-size:.8rem;color:var(--muted);margin-top:1px}
+.acc-amount{text-align:right}
+.acc-value{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--gold);line-height:1}
+.acc-pct{font-size:10px;color:var(--muted);margin-top:2px}
+.acc-arrow{display:flex;justify-content:center;margin:2px 0}
+.acc-arrow svg{color:var(--border)}
+.income-flow{background:var(--ink2);border-radius:12px;padding:1.25rem;margin-bottom:1rem}
+.flow-label{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);font-weight:600;margin-bottom:.5rem}
+.flow-amount{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:#fff;line-height:1}
+.flow-note{font-size:.82rem;color:rgba(255,255,255,.4);margin-top:3px}
+
+/* habit tracker */
+.habit-row-t{background:var(--card);border:.5px solid var(--border);border-radius:10px;padding:.8rem 1rem;display:flex;align-items:center;gap:11px;margin-bottom:7px}
+.h-freq{font-size:8px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--gold);background:var(--gold-l);padding:2px 8px;border-radius:20px;white-space:nowrap}
+.h-txt{font-size:.87rem;color:var(--ink);flex:1}
+.h-chk{width:21px;height:21px;border-radius:6px;border:.5px solid var(--border);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:var(--bg);font-size:10px;color:transparent;user-select:none;transition:all .15s}
+.h-chk.on{background:var(--teal);border-color:var(--teal);color:#fff}
+
+/* savings goal */
+.goal-progress{background:var(--bg);border-radius:12px;padding:1.25rem;margin-top:1rem}
+.goal-bar-track{height:20px;background:var(--border);border-radius:10px;overflow:hidden;margin:10px 0}
+.goal-bar-fill{height:100%;background:linear-gradient(90deg,var(--teal),var(--gold));border-radius:10px;transition:width .6s ease;display:flex;align-items:center;justify-content:flex-end;padding-right:8px}
+.goal-bar-pct{font-size:10px;font-weight:600;color:#fff}
+.milestone-row{display:flex;justify-content:space-between;font-size:10px;color:var(--subtle)}
+
+/* Responsive */
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:90}
+.overlay.show{display:block}
+@media(max-width:800px){
+  #sb{transform:translateX(-100%)}
+  #sb.open{transform:translateX(0)}
+  #main{margin-left:0}
+  .topbar{padding:.85rem 1.1rem}
+  .hamburger{display:flex}
+  .page{padding:2rem 1.1rem 5rem}
+  .stage-nav{flex-direction:column}
+  .nav-btn{justify-content:center}
+  .tool-row.cols2,.tool-row.cols3,.tool-row.cols4,.stat-grid.cols2,.stat-grid.cols3{grid-template-columns:1fr}
+  .sub-row{grid-template-columns:1fr 1fr auto auto}
+  .nw-item-row{grid-template-columns:1fr 1fr auto}
+  .payoff-result{grid-template-columns:1fr 1fr}
+  .tb-right .btn-sm:first-child{display:none}
+}
+/* ── OWNER SETUP BANNER ── */
+#owner-banner{background:#0f1923;border-bottom:1px solid rgba(200,146,58,.3);padding:.85rem 1.5rem;position:sticky;top:0;z-index:500;transition:all .3s}
+#owner-banner.hidden{display:none}
+#ob-inner{max-width:1200px;margin:0 auto;display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap}
+#ob-icon{font-size:1.1rem;flex-shrink:0;margin-top:2px}
+#ob-left{display:flex;align-items:flex-start;gap:10px;flex-shrink:0;min-width:220px}
+#ob-title{font-size:.82rem;font-weight:700;color:var(--gold);letter-spacing:.05em;text-transform:uppercase;margin-bottom:2px}
+#ob-sub{font-size:.75rem;color:rgba(255,255,255,.4);line-height:1.5;max-width:260px}
+#ob-controls{flex:1;min-width:280px}
+#ob-field-wrap{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+#ob-platform{background:#1a2535;border:.5px solid rgba(200,146,58,.3);border-radius:8px;color:rgba(255,255,255,.7);font-size:.8rem;padding:.5rem .75rem;font-family:'Outfit',sans-serif;cursor:pointer;flex-shrink:0;width:110px}
+#ob-platform:focus{outline:none;border-color:var(--gold)}
+#ob-link{flex:1;min-width:200px;background:#1a2535;border:.5px solid rgba(200,146,58,.3);border-radius:8px;color:#fff;font-size:.8rem;padding:.5rem .85rem;font-family:'Outfit',sans-serif;transition:border-color .2s}
+#ob-link:focus{outline:none;border-color:var(--gold)}
+#ob-link::placeholder{color:rgba(255,255,255,.25)}
+#ob-save-btn{background:var(--gold);color:#fff;border:none;border-radius:8px;padding:.5rem 1.1rem;font-size:.8rem;font-weight:700;cursor:pointer;font-family:'Outfit',sans-serif;white-space:nowrap;transition:background .2s;flex-shrink:0}
+#ob-save-btn:hover{background:#b07d2e}
+#ob-status{font-size:.75rem;margin-top:5px;height:14px;transition:all .3s}
+#ob-status.ok{color:#4ade80}
+#ob-status.err{color:#f87171}
+#ob-close{background:none;border:.5px solid rgba(255,255,255,.15);border-radius:6px;color:rgba(255,255,255,.35);font-size:.75rem;cursor:pointer;padding:4px 8px;flex-shrink:0;align-self:center;transition:all .2s;margin-left:auto}
+#ob-close:hover{border-color:rgba(255,255,255,.4);color:rgba(255,255,255,.7)}
+/* push main content down when banner is visible */
+#main{transition:margin-top .3s}
+@media(max-width:700px){
+  #ob-inner{flex-direction:column;gap:.75rem}
+  #ob-left{min-width:unset}
+  #ob-field-wrap{flex-direction:column;align-items:stretch}
+  #ob-platform{width:100%}
+}
+
+</style>
+</head>
+<body>
+<div class="screen" id="screen-landing">
+
+
+<!-- NAV -->
+<nav class="ln-nav">
+  <div class="ln-nav-inner">
+    <div class="ln-logo">SHIFT <span>Method</span></div>
+    <div class="nav-links">
+      <a href="#how-it-works">How it works</a>
+      <a href="#patterns">Your pattern</a>
+      <a href="#transformation">Transformation</a>
+      <a href="#faq">FAQ</a>
+      <a href="#" onclick="showPage('screen-assess');return false;" class="nav-cta">Take the Free Assessment →</a>
+    </div>
+    <button class="ham" onclick="showPage('screen-assess')">
+      <svg width="22" height="22" fill="none" viewBox="0 0 22 22"><path d="M4 6h14M4 11h14M4 16h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-bg-line"></div>
+  </div>
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow"><div class="hero-eyebrow-dot"></div><div class="hero-eyebrow-text">The SHIFT Method</div></div>
+      <h1>You are not bad with money.<br>You were just never taught<br><em>how money actually works</em>.</h1>
+      <p class="hero-sub">Not the maths — the psychology. The habits, the beliefs, the invisible patterns that drive every financial decision you make. SHIFT teaches you that. In 90 days.</p>
+      <div class="hero-actions">
+        <a href="#" onclick="showPage('screen-assess');return false;" class="btn-primary">
+          Start for free — discover your pattern
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="hero-note">No credit card. No signup. Instant personalised result.</div>
+      </div>
+      <div class="trust-row">
+        <div class="trust-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><circle cx="6" cy="6" r="5"/></svg>15 questions · 3 minutes</div>
+        <div class="trust-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><circle cx="6" cy="6" r="5"/></svg>5 money patterns identified</div>
+        <div class="trust-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><circle cx="6" cy="6" r="5"/></svg>Works in any country</div>
+        <div class="trust-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><circle cx="6" cy="6" r="5"/></svg>Used in 40+ countries</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+        <div class="h-card main">
+          <div class="h-card-label">Your SHIFT Assessment Result</div>
+          <div class="pattern-name">The Motivated Drifter</div>
+          <div class="pattern-sub">You start strong and fall off — the cycle is the problem, not you. Your entry point is Stage H.</div>
+          <div class="stage-dots">
+            <div class="stage-dot">S</div>
+            <div class="stage-dot active">H</div>
+            <div class="stage-dot">I</div>
+            <div class="stage-dot">F</div>
+            <div class="stage-dot">T</div>
+          </div>
+          <div class="h-card-insight">Your SHIFT entry point is Stage H — Habit Rewiring. You need micro-commitments so small they're impossible to skip.</div>
+        </div>
+        <div class="h-card float-1" style="top:260px"></div>
+        <div class="h-card float-2" style="top:300px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section problem-section" id="how-it-works">
+  <div class="container">
+    <div class="problem-grid">
+      <div>
+        <div class="s-eyebrow">The real problem</div>
+        <h2 class="s-title">You don't have a knowledge problem. You have a behaviour problem.</h2>
+        <p class="s-sub">Every financial tool, course, and app assumes you just need more information. They're wrong. Here's what's actually happening:</p>
+        <div class="problem-list">
+          <div class="problem-item"><div class="p-icon">😰</div><div><div class="p-title">You know what to do — and don't do it</div><div class="p-text">Budget, save, invest, reduce debt. You've read the books. You know the steps. Something else is stopping you.</div></div></div>
+          <div class="problem-item"><div class="p-icon">🔁</div><div><div class="p-title">You restart the same plan and get the same result</div><div class="p-text">New year, new budget app, new savings goal. Three weeks later, back to square one. It's not a willpower problem.</div></div></div>
+          <div class="problem-item"><div class="p-icon">🌫️</div><div><div class="p-title">Your financial decisions are emotionally driven</div><div class="p-text">Stress spending. Avoidance. Anxiety that stops you opening your bank app. These are patterns — and patterns can be changed.</div></div></div>
+          <div class="problem-item"><div class="p-icon">🧬</div><div><div class="p-title">Your money beliefs were installed in childhood</div><div class="p-text">"There's never enough." "Rich people are greedy." "I'm just not good with money." These run your finances more than any spreadsheet.</div></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="problem-truth">
+          <div class="pt-quote">"The real reason most people never fix their finances is not <span>a lack of information</span>. It's <span>unexamined beliefs, unconscious habits, and emotional patterns</span> that override every good intention."</div>
+          <div class="pt-divider"></div>
+          <div class="pt-author">— The SHIFT Method · Behavioural Financial Framework</div>
+          <div style="margin-top:1.5rem;display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;align-items:center;gap:10px;font-size:.85rem;color:rgba(255,255,255,.4)">
+              <span style="color:var(--gold);font-size:1rem">✦</span>
+              <span>SHIFT addresses the root cause — not the symptoms</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.85rem;color:rgba(255,255,255,.4)">
+              <span style="color:var(--gold);font-size:1rem">✦</span>
+              <span>Built on behavioural economics and financial psychology</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:.85rem;color:rgba(255,255,255,.4)">
+              <span style="color:var(--gold);font-size:1rem">✦</span>
+              <span>Works where budgets, apps, and courses have failed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRAMEWORK -->
+<section class="section framework-section">
+  <div class="container">
+    <div class="s-eyebrow">The framework</div>
+    <h2 class="s-title">Six stages. One complete transformation.</h2>
+    <p class="s-sub">The SHIFT framework moves you from unconscious patterns to intentional wealth — stage by stage. Your free assessment tells you exactly where to begin.</p>
+    <div class="framework-grid">
+      <div class="f-card">
+        <div class="f-tag" style="background:#EEEDFE;color:#4A3EA0">Stage 1</div>
+        <div class="f-letter" style="color:#4A3EA0">S</div>
+        <div class="f-name">Self-Awareness</div>
+        <div class="f-desc">Identify your specific money pattern and the unconscious beliefs running your financial decisions.</div>
+      </div>
+      <div class="f-card">
+        <div class="f-tag" style="background:#E0F2EE;color:#1F6B5E">Stage 2</div>
+        <div class="f-letter" style="color:#1F6B5E">H</div>
+        <div class="f-name">Habit Rewiring</div>
+        <div class="f-desc">Break destructive financial loops and replace them with new anchors through behavioural architecture.</div>
+      </div>
+      <div class="f-card">
+        <div class="f-tag" style="background:#FAEAE5;color:#B84E35">Stage 3</div>
+        <div class="f-letter" style="color:#B84E35">I</div>
+        <div class="f-name">Income Expansion</div>
+        <div class="f-desc">Remove income ceiling beliefs and take strategic action to earn more — not just spend less.</div>
+      </div>
+      <div class="f-card">
+        <div class="f-tag" style="background:#E6F1FB;color:#1E5F9A">Stage 4</div>
+        <div class="f-letter" style="color:#1E5F9A">F</div>
+        <div class="f-name">Financial Systems</div>
+        <div class="f-desc">Build automated money systems that work without willpower — budgets, savings, debt payoff on autopilot.</div>
+      </div>
+      <div class="f-card">
+        <div class="f-tag" style="background:#F5E6C8;color:#7A5520">Stages 5–6</div>
+        <div class="f-letter" style="color:#C8923A">T</div>
+        <div class="f-name">Total Freedom</div>
+        <div class="f-desc">Define what financial freedom means for you, build lasting wealth, and protect the progress you've made.</div>
+      </div>
+    </div>
+    <div class="framework-bottom">
+      <div class="fb-left">
+        <div class="fb-title">Not sure which stage to start from?</div>
+        <div class="fb-text">The free SHIFT Assessment identifies your specific money pattern and routes you to the exact stage that will move the needle fastest for your situation. No guessing. No starting from scratch. Just your personalised entry point.</div>
+      </div>
+      <div class="fb-right">
+        <a href="#" onclick="showPage('screen-assess');return false;" class="btn-primary">Take the Free Assessment →</a>
+        <div class="fb-cta-note" style="color:rgba(255,255,255,.3);font-size:.8rem;margin-top:.75rem">3 minutes · Free · Instant result</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATTERNS -->
+<section class="section patterns-section" id="patterns">
+  <div class="container">
+    <div class="s-eyebrow">The 5 money patterns</div>
+    <h2 class="s-title">Which one is keeping you stuck?</h2>
+    <p class="s-sub">Every financial struggle traces back to one of five behavioural patterns. Each has a trigger, a cost, and a clear path through SHIFT. The assessment identifies yours in 3 minutes.</p>
+    <div class="patterns-grid">
+      <div class="pattern-card">
+        <div class="pc-icon">🏗️</div>
+        <div class="pc-name">The Accidental Architect</div>
+        <div class="pc-trigger">Entry point: Stage F</div>
+        <div class="pc-desc">You have good instincts but no system. Progress is inconsistent because it depends on memory and mood. One automated system away from a completely different financial life.</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pc-icon">🌊</div>
+        <div class="pc-name">The Motivated Drifter</div>
+        <div class="pc-trigger">Entry point: Stage H</div>
+        <div class="pc-desc">You start strong and fall off — repeatedly. High motivation, poor execution. The cycle itself is the problem. You need habit architecture, not more willpower.</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pc-icon">⚡</div>
+        <div class="pc-name">The Anxious Achiever</div>
+        <div class="pc-trigger">Entry point: Stage S</div>
+        <div class="pc-desc">Intelligent, capable, and blocked by financial anxiety. You know what to do but fear stops you doing it. The anxiety is the system — and it can be rewired.</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pc-icon">🛡️</div>
+        <div class="pc-name">The Strategic Avoider</div>
+        <div class="pc-trigger">Entry point: Stage I</div>
+        <div class="pc-desc">Avoidance feels like protection — not opening statements, not checking balances. It costs more than any single financial mistake. One honest look changes everything.</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pc-icon">🌱</div>
+        <div class="pc-name">The Financially Wounded</div>
+        <div class="pc-trigger">Entry point: Stage S</div>
+        <div class="pc-desc">Money has been a source of pain. The beliefs installed by that pain now run your finances invisibly. SHIFT begins by naming them — and that naming is the start of everything.</div>
+      </div>
+    </div>
+    <div class="patterns-cta">
+      <p class="patterns-cta-text">Take the free assessment to find out exactly which pattern is yours — and what to do about it.</p>
+      <a href="#" onclick="showPage('screen-assess');return false;" class="btn-primary">Identify My Money Pattern — Free →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORMATION -->
+<section class="section transform-section" id="transformation">
+  <div class="container-narrow">
+    <div class="s-eyebrow">The transformation</div>
+    <h2 class="s-title">Before SHIFT. After SHIFT.</h2>
+    <p class="s-sub">This is not a comparison of net worth. It's a comparison of how you feel about money — which is what actually drives every financial decision you make.</p>
+    <div class="transform-grid">
+      <div class="before-after before">
+        <div class="ba-header before">Before SHIFT</div>
+        <div class="ba-list ba-list">
+          <div class="ba-item">Sunday dread every time you think about your finances</div>
+          <div class="ba-item">Starting budgets, feeling motivated for 2 weeks, falling off</div>
+          <div class="ba-item">Avoiding your bank statements and account notifications</div>
+          <div class="ba-item">Emotional spending as stress relief or self-care</div>
+          <div class="ba-item">Knowing what to do but something always getting in the way</div>
+          <div class="ba-item">Feeling like everyone else has figured this out except you</div>
+          <div class="ba-item">Money conversations that end in conflict or silence</div>
+        </div>
+      </div>
+      <div class="before-after after">
+        <div class="ba-header after">After SHIFT</div>
+        <div class="ba-list">
+          <div class="ba-item">A 20-minute weekly ritual that keeps your finances running automatically</div>
+          <div class="ba-item">A system that works whether you feel motivated or not</div>
+          <div class="ba-item">Looking at your numbers without fear — because you know what to do with them</div>
+          <div class="ba-item">Understanding why you spent — and being able to choose differently</div>
+          <div class="ba-item">Named beliefs that no longer run your behaviour invisibly</div>
+          <div class="ba-item">A clear net worth number moving in one direction: forward</div>
+          <div class="ba-item">Money conversations that build your relationship, not strain it</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="section proof-section">
+  <div class="container">
+    <div class="s-eyebrow" style="color:var(--gold)">Real results</div>
+    <h2 class="s-title" style="color:#fff">People who have been where you are.</h2>
+    <div class="proof-grid">
+      <div class="proof-card">
+        <div class="stars">★★★★★</div>
+        <div class="proof-text">"I've bought three budgeting courses before this. None worked because they assumed the problem was knowledge. SHIFT was the first thing that addressed why I kept self-sabotaging."</div>
+        <div class="proof-author">Amara K., 34 — Nairobi</div>
+        <div class="proof-pattern">Pattern: The Motivated Drifter</div>
+      </div>
+      <div class="proof-card">
+        <div class="stars">★★★★★</div>
+        <div class="proof-text">"I was avoiding my bank statements for two years. Within 30 days of starting Stage I of SHIFT, I had looked at everything, set up a debt repayment plan, and actually felt okay about it."</div>
+        <div class="proof-author">David M., 29 — London</div>
+        <div class="proof-pattern">Pattern: The Strategic Avoider</div>
+      </div>
+      <div class="proof-card">
+        <div class="stars">★★★★★</div>
+        <div class="proof-text">"The AI coaching prompts alone are worth more than the price. I had a complete personalised financial plan from Claude in under an hour. The framework gave me the structure to actually use it."</div>
+        <div class="proof-author">Priya S., 31 — Toronto</div>
+        <div class="proof-pattern">Pattern: The Anxious Achiever</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <div class="s-eyebrow">Questions</div>
+    <h2 class="s-title">What people ask before starting</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What exactly is the SHIFT Method?</div>
+        <div class="faq-a">SHIFT is a 6-stage behavioural financial framework — Self-Awareness, Habit Rewiring, Income Expansion, Financial Systems, Total Freedom. Unlike budgeting apps or finance courses, SHIFT addresses the psychological and behavioural root causes of financial struggle, not just the numbers. It combines a 90-day interactive workbook, live financial calculators, and 50+ AI coaching prompts.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is the assessment really free?</div>
+        <div class="faq-a">Completely free. No credit card, no email required to start, no catch. You take 15 questions, discover your money pattern, and receive a personalised result showing your SHIFT starting point and an AI coaching prompt you can use immediately. At the end of your result you'll be invited to unlock the full 90-Day System — that's your choice.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How is this different from a budgeting app or finance course?</div>
+        <div class="faq-a">Budgeting apps assume the problem is organisation. Finance courses assume the problem is knowledge. SHIFT assumes — correctly — that the problem is behaviour. If you already know what to do but can't make yourself do it consistently, you need SHIFT, not another spreadsheet.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Does this work if I'm not based in the US or UK?</div>
+        <div class="faq-a">Yes — fully. The SHIFT framework is behavioural and universal. The live calculators inside the workbook support any currency. We have users across Kenya, Nigeria, South Africa, India, the UAE, Canada, Australia, and Southeast Asia. Money psychology does not have a postcode.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do I need any special tools or subscriptions to use SHIFT?</div>
+        <div class="faq-a">No. The workbook is a single HTML file — open it in any browser on any device, no installation, no account. The AI coaching prompts work with a free ChatGPT or Claude account. You do not need any paid subscription to get full value from SHIFT.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How much time does SHIFT take each week?</div>
+        <div class="faq-a">The assessment takes 3 minutes. The weekly Money Ritual at the core of the system takes 20 minutes per week. Each workbook module is designed for 30–45 minutes of focused work. Most people notice a meaningful shift in their relationship with money within the first 30 days — before they've even finished the first two stages.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-section">
+  <div class="container" style="text-align:center;position:relative">
+    <div class="final-eyebrow">Your starting point is free</div>
+    <h2 class="final-title">The financial life you want<br>starts with <em>understanding yourself</em></h2>
+    <p class="final-sub">3 minutes. 15 questions. A personalised result that shows you your money pattern, what is quietly driving it, and exactly where SHIFT begins for you.</p>
+    <a href="#" onclick="showPage('screen-assess');return false;" class="btn-primary" style="margin:0 auto">
+      Start for free — discover your pattern →
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <div class="final-free-note">Free · No credit card · No signup required · Results in 3 minutes</div>
+  </div>
+</section>
+
+<footer class="ln-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">SHIFT <span>Method</span></div>
+    <div class="footer-links">
+      <a href="#how-it-works">How it works</a>
+      <a href="#patterns">Patterns</a>
+      <a href="#faq">FAQ</a>
+      <a href="#" onclick="showPage('screen-assess');return false;">Free Assessment</a>
+    </div>
+    <div class="footer-copy">© 2025 The SHIFT Method · All rights reserved</div>
+  </div>
+</footer>
+
+
+</div>
+
+<div class="screen" id="screen-assess">
+  <div class="azi-wrap">
+    <button class="azi-back" onclick="showPage('screen-landing')">&larr; Back to home</button>
+    <div class="azi-eyebrow">Free &middot; 3 minutes &middot; Instant result</div>
+    <h1 class="azi-h1">Discover Your<br><em>Money Pattern</em></h1>
+    <p class="azi-sub">15 questions that reveal the hidden behavioural pattern keeping you stuck &mdash; and exactly which stage of SHIFT to start from to change it.</p>
+    <div class="azi-pills">
+      <span class="azi-pill">&#10022; 15 questions</span>
+      <span class="azi-pill">&#10022; 3 minutes</span>
+      <span class="azi-pill">&#10022; 5 patterns identified</span>
+      <span class="azi-pill">&#10022; Personalised result</span>
+      <span class="azi-pill">&#10022; Free &middot; No card</span>
+    </div>
+    <button class="azi-start" onclick="startQuiz()">Start the Assessment &rarr;</button>
+    <div class="azi-note">Your result is completely personalised. No two answers are the same.</div>
+  </div>
+</div>
+
+<div class="screen" id="screen-quiz">
+  <div class="quiz-screen">
+    <div class="quiz-wrap">
+      <div class="prog-header">
+        <span class="prog-label" id="prog-label">Question 1 of 15</span>
+        <span class="prog-pct" id="prog-pct">0%</span>
+      </div>
+      <div class="prog-bar"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div>
+      <div id="q-container"></div>
+    </div>
+  </div>
+</div>
+
+<div class="screen" id="screen-gate">
+  <div class="gate-screen">
+    <div class="gate-card">
+      <span class="gate-icon">&#10022;</span>
+      <h2>Your result is ready</h2>
+      <p>Enter your details to reveal your money pattern, your SHIFT starting point, and a personalised AI coaching prompt you can use right now.</p>
+      <input class="gate-input" type="text" id="fname" placeholder="Your first name">
+      <input class="gate-input" type="email" id="femail" placeholder="Your email address">
+      <button class="reveal-btn" onclick="showResult()">Reveal My Money Pattern &rarr;</button>
+      <p style="font-size:11px;color:var(--subtle);margin-top:.75rem">No spam. Unsubscribe anytime. Your data stays private.</p>
+    </div>
+  </div>
+</div>
+
+<div class="screen" id="screen-result">
+  <div class="result-screen">
+    <div style="max-width:680px;margin:0 auto 1rem">
+      <button class="azi-back" style="position:static;color:var(--subtle)" onclick="showPage('screen-landing')">&larr; Home</button>
+    </div>
+    <div class="result-wrap" id="result-content"></div>
+  </div>
+</div>
+<div class="screen" id="screen-workbook">
+
+
+<!-- ── OWNER SETUP BANNER ── -->
+<div id="owner-banner">
+  <div id="ob-inner">
+    <div id="ob-left">
+      <span id="ob-icon">⚙</span>
+      <div>
+        <div id="ob-title">Owner Preview Mode</div>
+        <div id="ob-sub">You're viewing the workbook as your customers will see it. Paste your checkout link below to go live.</div>
+      </div>
+    </div>
+    <div id="ob-controls">
+      <div id="ob-field-wrap">
+        <select id="ob-platform">
+          <option value="">Platform</option>
+          <option value="gumroad">Gumroad</option>
+          <option value="stanstore">Stan Store</option>
+          <option value="payhip">Payhip</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="url" id="ob-link" placeholder="Paste your checkout URL here — e.g. https://yourname.gumroad.com/l/shift">
+        <button id="ob-save-btn" onclick="saveCheckoutLink()">Save Link</button>
+      </div>
+      <div id="ob-status"></div>
+    </div>
+    <button id="ob-close" onclick="closeBanner()" title="Hide banner">✕</button>
+  </div>
+</div>
+
+<aside id="sb">
+  <div class="sb-logo"><div class="sb-brand">SHIFT</div><div class="sb-tag">90-Day Workbook</div></div>
+  <div class="sb-prog">
+    <div class="sb-prog-lbl">Overall progress</div>
+    <div class="sb-prog-track"><div class="sb-prog-bar" id="opb" style="width:0%"></div></div>
+    <div class="sb-prog-pct" id="opct">0% complete</div>
+  </div>
+  <nav class="sb-nav" id="sbnav"></nav>
+  <div class="sb-foot"><button class="sb-upsell" onclick="goToCheckout()">Get the SHIFT System — $99 →</button></div>
+</aside>
+<div class="overlay" id="ov" onclick="closeSB()"></div>
+<main id="main">
+  <div class="topbar">
+    <div class="tb-left">
+      <button class="hamburger" onclick="toggleSB()">
+        <svg width="20" height="20" fill="none" viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <div><div class="tb-stage" id="tb-stage">Welcome</div><div class="tb-title" id="tb-title">SHIFT 90-Day Workbook</div></div>
+    </div>
+    <div class="tb-right">
+      <button class="btn-sm" onclick="resetStage()">Reset stage</button>
+      <button class="btn-sm gold" onclick="markDone()">Mark complete ✓</button>
+    </div>
+  </div>
+  <div class="page" id="page"></div>
+</main>
+
+
+
+</div>
+<script>
+
+/* ============================================================
+   OWNER SETTINGS — paste your Kit form link between the quotes
+   ------------------------------------------------------------
+   KIT_FORM_ACTION: your Kit (ConvertKit) form's submit URL.
+     In Kit, build a form, then in its embed code copy the URL
+     after action="..."  It looks like:
+     "https://app.kit.com/forms/1234567/subscriptions"
+   ============================================================ */
+var KIT_FORM_ACTION = "https://app.kit.com/forms/9546119/subscriptions";
+/* ============================================================ */
+
+var SCREEN_IDS=['screen-landing','screen-assess','screen-quiz','screen-gate','screen-result','screen-workbook'];
+function showPage(id){
+  SCREEN_IDS.forEach(function(s){ var el=document.getElementById(s); if(el) el.style.display='none'; });
+  var el=document.getElementById(id);
+  if(!el) return;
+  el.style.display='block';
+  try{ window.scrollTo(0,0); }catch(e){}
+}
+function openWorkbook(){
+  showPage('screen-workbook');
+  if(typeof buildSB==='function') buildSB();
+  if(typeof render==='function') render();
+}
+
+
+var Q=[
+  {t:"When your bank notification pops up, you…",o:["Open it immediately — I like knowing where I stand","Swipe it away and tell yourself you'll check later","Feel a rush of anxiety but eventually look","Open it, panic slightly, then close the app","Feel nothing — I've fully disconnected from checking"]},
+  {t:"It's payday. Within 24 hours, you most likely…",o:["Move money into savings before spending anything","Spend on things I've been waiting to buy","Pay urgent bills then see what's left","Feel briefly rich, then confused where it went","Feel relieved, but the relief fades fast"]},
+  {t:"Your honest relationship with budgets is…",o:["I make them and mostly stick to them","I make them, feel good for 3 days, then forget","I've tried several times but they never fit my life","I know I should but the idea fills me with dread","What budget? I wing it and deal with consequences"]},
+  {t:"When a friend mentions their savings progress, you feel…",o:["Curious and inspired — I ask how they did it","Quietly envious but quickly change the subject","Like I'm behind and anxious about it","Motivated for a day, then back to normal","Disconnected — money talk makes me uncomfortable"]},
+  {t:"Your non-essential spending is…",o:["Planned and within a set amount each month","Mostly controlled but with occasional splurges","Emotional — I spend more when stressed or sad","Inconsistent — feast or famine with my mood","I genuinely don't know — I avoid tracking it"]},
+  {t:"When you think about your finances in 5 years, you…",o:["Have a clear picture and a plan to get there","Have a vague vision but no concrete steps","Feel hopeful but slightly helpless about how to start","Feel overwhelmed and push the thought away","Try not to think about it at all"]},
+  {t:"Your current relationship with debt is…",o:["I have none, or I'm actively paying it down","I have some and I'm managing it mostly","I have debt I try not to think about too much","I know it's a problem but don't know where to start","I avoid opening those statements entirely"]},
+  {t:"When you get an unexpected bill, you…",o:["Deal with it from my emergency fund calmly","Stress but find a solution within a day or two","Spiral into anxiety and take a while to act","Ignore it as long as possible then panic-fix it","Feel like the universe is against me financially"]},
+  {t:"The last time you made an impulse purchase, you felt…",o:["I don't really make impulse purchases","A brief buzz, then mild regret later","Genuinely good in the moment — it felt like self-care","Guilty immediately and wished I hadn't","I can't remember — I try not to track those"]},
+  {t:"Your childhood money environment was…",o:["Stable — money was talked about openly","Tight but managed — we got by carefully","Stressful — money was a source of conflict","Inconsistent — sometimes fine, sometimes crisis","Money was a taboo topic no one discussed"]},
+  {t:"When you imagine having significantly more money, you feel…",o:["Excited — I have a clear list of what I'd do","Hopeful but slightly undeserving of it","Anxious — more money means more responsibility","Disconnected — it doesn't feel real or possible","Suspicious — I worry it would create problems"]},
+  {t:"Your savings habit right now is…",o:["Automated and consistent — it happens without thinking","I save when I remember or feel I can afford to","I want to save but always find reasons not to this month","I've tried many times and always fall off","I don't save — there's never enough left over"]},
+  {t:"When you talk about money with a partner or close friend, you…",o:["Find it easy and practical — just a conversation","Feel slightly awkward but power through","Avoid the topic to prevent conflict or judgment","Downplay your situation to seem more together","Refuse to have those conversations at all"]},
+  {t:"The phrase that best describes your money story is…",o:['"I am building wealth steadily and intentionally"','"I know what to do, I just struggle to stay consistent"','"I feel like money controls me more than I control it"','"I work hard but can never seem to get ahead"','"Money has always been a source of pain or stress"']},
+  {t:"What would change your financial life most right now?",o:["A clearer system and smarter automation","Accountability and consistency support","Understanding why I self-sabotage with money","A complete mindset reset around what I deserve","Someone to help me face my finances without shame"]}
+];
+
+var PATTERNS={
+  architect:{name:"The Accidental Architect",sub:"You have instincts but no system — and that gap is costing you.",stage:"F",col:"#1E5F9A",
+    core:"You are doing more right than you think. But your financial progress is inconsistent because it depends on mood and memory rather than automated systems. You are one good system away from a completely different financial life.",
+    blind:"You underestimate the compounding cost of inconsistency. Every month without automated savings or a tracking ritual is money and momentum lost — quietly, invisibly.",
+    action:"Your SHIFT entry point is Stage F — Financial Systems. You do not need a mindset overhaul. You need friction-free automation and a 20-minute weekly ritual that runs your finances whether you feel like it or not.",
+    prompt:"I earn [YOUR INCOME]/month. I save inconsistently and my finances depend on remembering and motivation. Design a fully automated financial system that removes willpower from the equation — specific accounts, amounts, transfer timings, and rules for lean months."},
+  drifter:{name:"The Motivated Drifter",sub:"You start strong and fall off — the cycle is the problem, not you.",stage:"H",col:"#1F6B5E",
+    core:"You are highly motivated in short bursts and have genuine financial intelligence. But execution breaks down because you are relying on inspiration rather than habit architecture. The problem is not discipline — it is system design.",
+    blind:"You keep restarting the same plan and getting the same result. That is not a motivation problem — it is a behaviour design problem. The solution is not to try harder. It is to design smarter.",
+    action:"Your SHIFT entry point is Stage H — Habit Rewiring. You need micro-commitments so small they are impossible to skip, and a tracking ritual that makes progress visible enough to sustain momentum past week 3.",
+    prompt:"I have tried to budget and save consistently [X] times and always fall off after a few weeks. Analyse my pattern behaviourally and design a 5-minute daily financial habit I genuinely cannot avoid — even on my worst day."},
+  anxious:{name:"The Anxious Achiever",sub:"You are more capable than your anxiety lets you believe.",stage:"S",col:"#4A3EA0",
+    core:"You are intelligent, hardworking, and genuinely want to do better — but financial anxiety overrides your intentions. The anxiety creates avoidance. The avoidance creates more anxiety. This is the loop you are stuck in.",
+    blind:"You often make financially sound decisions, then undo them with anxiety-driven reactions. The system works. The fear interrupts it. The work is not financial — it is psychological.",
+    action:"Your SHIFT entry point is Stage S — Self-Awareness. Before any tools or systems, you need to name and interrupt the anxiety loop. Once you can observe your financial anxiety without being controlled by it, everything else becomes possible.",
+    prompt:"Financial anxiety stops me from acting on what I know I should do with money. Identify my likely anxiety triggers and give me a 3-step protocol to use in the moment when financial anxiety hits — before I make a decision or avoid one."},
+  avoider:{name:"The Strategic Avoider",sub:"Avoidance feels like protection — but it is the most expensive habit you have.",stage:"I",col:"#B84E35",
+    core:"Your avoidance of financial reality is not laziness. It is a protection mechanism that developed because facing your finances once felt too painful. But avoidance has compounding costs — every month of not looking is a month of lost progress.",
+    blind:"Avoiders frequently discover that their situation, when finally faced, is far more manageable than they feared. You have more options than you think. The fear of what you might find is almost always worse than what you find.",
+    action:"Your SHIFT entry point is Stage I — Income and Awareness. Start with one small look: one account, one number. The goal is not a full audit — it is breaking the avoidance pattern with a single honest act.",
+    prompt:"I have been avoiding looking at my finances properly for [X months/years]. I am ready to take the first step. Give me a gentle 30-minute first financial session — structured, non-overwhelming, and designed to help me take one honest look at what I am working with without shutting down."},
+  wounded:{name:"The Financially Wounded",sub:"Your money wounds are real — and so is your ability to heal them.",stage:"S",col:"#C8923A",
+    core:"Money has been a source of pain, trauma, or deep stress in your life — and those experiences have shaped beliefs that now run in the background of every financial decision. This is not your fault. But it is your work to do.",
+    blind:"Many of the beliefs running your finances were installed before you had any choice. 'There is never enough.' 'I do not deserve wealth.' 'Money causes problems.' These are not facts. They are old programming — and programming can be changed.",
+    action:"Your SHIFT entry point is Stage S — Self-Awareness, specifically the Limiting Beliefs module. Before any budgets or spreadsheets, you need to identify and name the money beliefs you are operating from. That awareness alone begins to change everything.",
+    prompt:"I have a difficult emotional relationship with money that stems from my upbringing and past experiences with financial stress. Help me identify the specific money beliefs I may have inherited, explain how each one might be showing up in my current financial behaviour, and give me 3 evidence-based reframes for the most limiting ones."}
+};
+
+var answers=[], qCur=0;
+
+
+
+function startQuiz(){ answers=[]; qCur=0; showPage('screen-quiz'); renderQ(); }
+
+function renderQ(){
+  var q=Q[qCur];
+  var pct=Math.round(qCur/Q.length*100);
+  document.getElementById('prog-label').textContent='Question '+(qCur+1)+' of '+Q.length;
+  document.getElementById('prog-pct').textContent=pct+'%';
+  document.getElementById('prog-fill').style.width=pct+'%';
+  var letters=['A','B','C','D','E'];
+  var opts=q.o.map(function(o,i){
+    return '<button class="opt" id="opt'+i+'" onclick="pick('+i+')">'
+      +'<span class="opt-ltr" id="ltr'+i+'">'+letters[i]+'</span>'
+      +'<span>'+o+'</span></button>';
+  }).join('');
+  document.getElementById('q-container').innerHTML=
+    '<div class="q-card">'
+    +'<div class="q-counter">Question '+(qCur+1)+' of '+Q.length+'</div>'
+    +'<div class="q-text">'+q.t+'</div>'
+    +'<div class="options">'+opts+'</div>'
+    +'<div class="q-footer">'
+    +'<div class="q-hint">Select one answer to continue</div>'
+    +'<button class="next-btn" id="nxt" onclick="nextQ()">'
+    +(qCur<Q.length-1?'Next <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>':'See my result <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+    +'</button></div></div>';
+}
+
+function pick(i){
+  document.querySelectorAll('.opt').forEach(function(el){el.classList.remove('sel');});
+  document.getElementById('opt'+i).classList.add('sel');
+  answers[qCur]=i;
+  document.getElementById('nxt').classList.add('on');
+}
+
+function nextQ(){
+  if(answers[qCur]===undefined)return;
+  qCur++;
+  if(qCur<Q.length){ renderQ(); }
+  else{ showPage('screen-gate'); }
+}
+
+function getPattern(){
+  var scores={architect:0,drifter:0,anxious:0,avoider:0,wounded:0};
+  var map=['architect','drifter','anxious','avoider','wounded'];
+  answers.forEach(function(a){if(map[a])scores[map[a]]++;});
+  return Object.entries(scores).sort(function(a,b){return b[1]-a[1];})[0][0];
+}
+
+function showResult(){
+  var fname=document.getElementById('fname').value.trim()||'there';
+  var email=document.getElementById('femail').value.trim();
+  if(!email){alert('Please enter your email to receive your result.');return;}
+  var key=getPattern();
+  // ---- send the lead to Kit / ConvertKit (non-blocking) ----
+  if(KIT_FORM_ACTION){
+    try{
+      var pname=(PATTERNS[key]&&PATTERNS[key].name)||key;
+      var fd=new FormData();
+      fd.append('email_address', email);
+      fd.append('first_name', fname);
+      fd.append('fields[pattern]', pname);
+      fetch(KIT_FORM_ACTION,{method:'POST',body:fd,headers:{'Accept':'application/json'}}).catch(function(){});
+    }catch(e){}
+  }
+  // ----------------------------------------------------------
+  var p=PATTERNS[key];
+  var stages=[{l:'S',n:'Self-awareness'},{l:'H',n:'Habit rewiring'},{l:'I',n:'Income'},{l:'F',n:'Systems'},{l:'T',n:'Freedom'}];
+  var pills=stages.map(function(s){
+    return '<div class="s-pill'+(s.l===p.stage?' hi':'')+'"><div class="s-letter">'+s.l+'</div><div class="s-name">'+s.n+'</div></div>';
+  }).join('');
+  var includes=['SHIFT 90-Day Interactive Workbook','Live Budget & Debt Calculators','50+ AI Coaching Prompts','Net Worth Tracker','Weekly Money Ritual System','Income Expansion Playbook','Money Belief Reset Guide','Couples Money Harmony Guide'];
+  var incHtml=includes.map(function(x){return '<div class="inc-row">'+x+'</div>';}).join('');
+
+  document.getElementById('result-content').innerHTML=
+    '<div class="res-hero">'
+    +'<div class="res-badge">Your SHIFT Money Pattern</div>'
+    +'<div class="res-pattern">'+p.name+'</div>'
+    +'<div class="res-sub">'+p.sub+'</div>'
+    +'</div>'
+
+    +'<div class="ins-card"><div class="ins-lbl">What this means for you, '+qEsc(fname)+'</div><div class="ins-body">'+p.core+'</div></div>'
+    +'<div class="ins-card"><div class="ins-lbl">Your blind spot</div><div class="ins-body">'+p.blind+'</div></div>'
+
+    +'<div class="ins-card">'
+    +'<div class="ins-lbl">Your SHIFT starting point — Stage '+p.stage+'</div>'
+    +'<div class="stage-row">'+pills+'</div>'
+    +'<div class="ins-body">'+p.action+'</div>'
+    +'</div>'
+
+    +'<div class="ins-card">'
+    +'<div class="ins-lbl">Your personalised AI coaching prompt — click to copy</div>'
+    +'<div class="prompt-block" onclick="copyPrompt(this,\''+encodeURIComponent(p.prompt)+'\')">'
+    +p.prompt
+    +'<div class="copy-hint" id="copy-hint">Click to copy → paste into ChatGPT or Claude</div>'
+    +'</div></div>'
+
+    +'<div class="upgrade-card">'
+    +'<div class="uc-eyebrow">Your next step</div>'
+    +'<div class="uc-title">You know your pattern.<br>Now get the system to change it.</div>'
+    +'<div class="uc-sub">The SHIFT 90-Day Interactive Workbook gives you live financial calculators, fillable exercises, 50+ AI coaching prompts, and a complete step-by-step framework built around your starting point — Stage '+p.stage+'.</div>'
+    +'<div class="price-row"><div class="price-val">$99</div><div class="price-orig">$297</div></div>'
+    +'<div class="price-note">One-time payment · Instant access · Lifetime updates</div>'
+    +'<div class="includes-grid">'+incHtml+'</div>'
+    +'<button class="unlock-btn" onclick="checkout(\''+key+'\')">'
+    +'Preview My 90-Day Workbook →'
+    +'</button>'
+    +'<div class="uc-guarantee">✦ Preview the full workbook · Add your checkout link when ready to sell</div>'
+    +'</div>'
+
+    +'<div class="retake-link" onclick="startQuiz()">Retake the assessment</div>';
+
+  showPage('screen-result');
+}
+
+function copyPrompt(el,encoded){
+  var txt=decodeURIComponent(encoded);
+  var hint=el.querySelector('.copy-hint');
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(function(){
+      hint.textContent='Copied! Paste into ChatGPT or Claude ✓';
+      hint.className='copy-hint done';
+      setTimeout(function(){hint.textContent='Click to copy → paste into ChatGPT or Claude';hint.className='copy-hint';},3000);
+    });
+  } else {
+    var ta=document.createElement('textarea');ta.value=txt;ta.style.cssText='position:fixed;opacity:0';
+    document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);
+    hint.textContent='Copied! Paste into ChatGPT or Claude ✓';hint.className='copy-hint done';
+    setTimeout(function(){hint.textContent='Click to copy → paste into ChatGPT or Claude';hint.className='copy-hint';},3000);
+  }
+}
+
+function checkout(key){
+  // Opens the workbook directly for preview.
+  // When you are ready to sell, the workbook has a setup banner where you paste your checkout link.
+  openWorkbook();
+}
+
+function qEsc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+
+var store={}, completed={}, habits={};
+function gv(k){return store[k]||'';}
+function sv(k,v){store[k]=v;}
+function fmt(n){return isNaN(n)?'—':Number(n).toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:0});}
+function fmtD(n){return isNaN(n)||n===0?'—':Number(n).toFixed(0);}
+
+var STAGES=[
+{id:'welcome',lbl:'Start here',ico:'✦',col:'#C8923A',name:'Welcome',days:'',short:'Overview',desc:'',mods:[]},
+{id:'S',lbl:'Stage 1',ico:'S',col:'#4A3EA0',name:'Self-Awareness',days:'Days 1–15',short:'Self-Awareness',
+ desc:'Before any tools or systems, you need to see yourself clearly. This stage makes the invisible visible — the patterns, beliefs, and emotional responses running your financial life.',
+ mods:[
+  {id:'S1',n:'1',title:'Your Financial Timeline',sub:'Map the key moments that shaped your money story',
+   body:'Your financial beliefs were installed long before you had any say. Trace their origin — not to dwell on the past, but to understand the present.',
+   call:{t:'',l:'Why this matters',x:'You cannot change a pattern you cannot see. Most financial struggles are not about information — they are about unexamined stories inherited from childhood and culture.'},
+   exs:[{id:'S1a',title:'My Earliest Money Memory',hint:'What is your earliest memory involving money? What did it teach you?',rows:4},{id:'S1b',title:'My Household Money Environment',hint:'Growing up, how was money talked about in your home? Was it a source of stress, pride, silence, or conflict?',rows:4},{id:'S1c',title:'My 3 Biggest Financial Turning Points',hint:'List 3 moments — good or bad — that shaped how you think about money today.',rows:5}],
+   prompt:'I want to understand my financial history. Ask me 5 deep questions about my relationship with money — one at a time — and after each answer, help me identify the underlying belief it reveals.'},
+  {id:'S2',n:'2',title:'Identifying Your Money Beliefs',sub:'Name the rules running your financial decisions',
+   body:'Money beliefs feel like facts but they are decisions — and decisions can be changed. Common ones: "Rich people are greedy." "There\'s never enough." "I\'m just not good with money."',
+   call:{t:'teal',l:'Remember',x:'You did not choose these beliefs. They were given to you. Naming them is the first act of taking your financial life back.'},
+   exs:[{id:'S2a',title:'My Top 3 Money Beliefs',hint:'Write the beliefs running in the background of your financial decisions. Start with "Money is..." or "People like me..."',rows:4},{id:'S2b',title:'Where Each Belief Came From',hint:'For each belief — who gave it to you? What evidence contradicts it?',rows:4},{id:'S2c',title:'My Belief Reframes',hint:'For each limiting belief, write a new statement that is equally true but more empowering.',rows:4}],
+   prompt:'Here are my core money beliefs: [LIST YOURS]. For each one, give me: (1) the likely origin, (2) evidence against it, and (3) a powerful reframe I can actually believe.'},
+  {id:'S3',n:'3',title:'Your Money Pattern',sub:'Understand which SHIFT pattern is driving your behaviour',
+   body:'Based on your SHIFT Assessment, you know your pattern. This module helps you go deeper — understanding exactly how it shows up in your daily financial decisions.',
+   call:{t:'',l:'The 5 SHIFT patterns',x:'The Accidental Architect · The Motivated Drifter · The Anxious Achiever · The Strategic Avoider · The Financially Wounded. Every pattern has a strength and a shadow.'},
+   exs:[{id:'S3a',title:'How My Pattern Shows Up',hint:'Give 3 specific recent examples of your money pattern in action. Be precise.',rows:5},{id:'S3b',title:'The Hidden Payoff',hint:'Every pattern serves a purpose. What does yours protect you from?',rows:4},{id:'S3c',title:"My Pattern's Strength",hint:'Your pattern also has a genuine strength. What is yours?',rows:3}],
+   prompt:'My SHIFT money pattern is [YOUR PATTERN]. Give me: (1) how this pattern shows up day-to-day, (2) the core fear driving it, (3) its hidden strength, and (4) the single most important shift I can make in the next 30 days.'}
+ ]},
+{id:'H',lbl:'Stage 2',ico:'H',col:'#1F6B5E',name:'Habit Rewiring',days:'Days 16–30',short:'Habit Rewiring',
+ desc:'Your financial habits are not character flaws — they are neural pathways built through repetition. This stage systematically replaces the pathways that no longer serve you.',
+ mods:[
+  {id:'H1',n:'1',title:'Mapping Your Habit Loops',sub:'Identify the trigger → routine → reward cycle',
+   body:'Every financial habit has three parts: a Trigger, a Routine, and a Reward. To change a habit you must identify all three. Most people try to change the routine without understanding the trigger or reward — and fail every time.',
+   call:{t:'',l:'The habit loop',x:'You cannot remove a habit. You can only replace it. The trigger and reward stay the same. The routine is what changes. This is why willpower alone never works.'},
+   exs:[{id:'H1a',title:'My Spending Trigger Map',hint:'What situations, emotions, or times of day most reliably lead to unplanned spending? List at least 5.',rows:5},{id:'H1b',title:'My Avoidance Triggers',hint:'What makes you avoid looking at your finances? What does the avoidance protect you from feeling?',rows:4},{id:'H1c',title:"The Reward I'm Seeking",hint:'For your most problematic financial habit — what reward does it actually deliver? Relief? Excitement? Control?',rows:3}],
+   prompt:'I want to rewire my habit of [SPECIFIC HABIT]. Walk me through the full habit loop: identify the likely trigger, the routine, and the reward I am seeking. Then give me 3 replacement routines that deliver the same reward without the financial cost.'},
+  {id:'H2',n:'2',title:'The Rewire Protocol',sub:'Replace destructive patterns with better ones',
+   body:'For each habit you want to change: keep the same trigger, change only the routine, deliver the same or better reward. The simpler the replacement, the more likely it sticks.',
+   call:{t:'teal',l:'The 24-hour rule',x:'For any non-essential purchase over your threshold, wait 24 hours. This single rule breaks the impulse purchase loop for most people.'},
+   exs:[{id:'H2a',title:'My Rewire Map',hint:'Choose your top 2 financial habits to change. For each: trigger, old routine, new routine, and how it delivers the same reward.',rows:6},{id:'H2b',title:'My Minimum Viable Habit',hint:'What is the smallest possible version of your new financial habit that you could do even on your worst day? Under 2 minutes.',rows:3},{id:'H2c',title:'My Environment Design',hint:'How will you change your environment to make the new habit easier and the old habit harder?',rows:4}],
+   prompt:'I want to build a consistent saving habit. I earn [AMOUNT]/month and save inconsistently. Design a minimum viable saving habit that takes under 2 minutes and removes willpower from the equation.'},
+  {id:'H3',n:'3',title:'The 5 Core Financial Habits',sub:'Your non-negotiable daily and weekly practices',
+   body:'These five habits are the foundation of the SHIFT system. They take under 30 minutes per week combined. Check off each one below as you build the practice.',
+   call:{t:'coral',l:'Your weekly commitment',x:'The weekly ritual (20 minutes) is the one habit that cannot be skipped. Schedule it now — same day, same time, every week.'},
+   exs:[{id:'H3a',title:'My Habit Commitment',hint:'Write a specific commitment for each habit. Include when, where, and how you will do each one.',rows:5},{id:'H3b',title:'My Never-Miss-Twice Rule',hint:'What will you do when you miss a day? Write your specific recovery protocol.',rows:3}],
+   prompt:'I want to build these 5 financial habits. Create a habit stacking plan that attaches each to an existing daily routine I already have, so they happen automatically.',
+   hasHabits:true}
+ ]},
+{id:'I',lbl:'Stage 3',ico:'I',col:'#B84E35',name:'Income Expansion',days:'Days 31–45',short:'Income Expansion',
+ desc:'Most financial systems focus only on spending less. SHIFT dedicates an entire stage to earning more — because your income ceiling is almost always a belief ceiling first.',
+ mods:[
+  {id:'I1',n:'1',title:'Your Income Ceiling Beliefs',sub:'Identify what is limiting your earning potential',
+   body:'Before any strategy, examine the beliefs keeping your income where it is. Most income ceilings are internal, not external.',
+   call:{t:'',l:'Common income ceiling beliefs',x:'"I am not the type of person who earns a lot." "Asking for more feels greedy." "There is a limit to what someone like me can earn." Which of these feel familiar?'},
+   exs:[{id:'I1a',title:'My Income Ceiling Beliefs',hint:'What beliefs do you hold about how much you can or should earn? Write them without filtering.',rows:4},{id:'I1b',title:'Evidence Against Each Belief',hint:'For each belief — find a real person whose life disproves it.',rows:4},{id:'I1c',title:'My Unclaimed Skills',hint:'List 10 things you are genuinely good at. Circle the ones people would pay for.',rows:5}],
+   prompt:'My current income is [AMOUNT]/month. I believe my earning ceiling is [AMOUNT] because [YOUR BELIEF]. Challenge this belief and identify my 2 best income expansion paths based on these skills: [LIST].'},
+  {id:'I2',n:'2',title:'Income Growth Strategy',sub:'Choose your highest-leverage path and build your Savings Goal',
+   body:'There are only three ways to earn more: get paid more for what you do, do more of it, or learn something new. The fastest is almost always the first. Use the Savings Goal Planner below to see exactly how extra income changes your trajectory.',
+   call:{t:'teal',l:'The fastest income win',x:'Salary negotiation is the highest ROI financial act most people never take. A 10% raise on a $50,000 salary is $5,000/year for one conversation.'},
+   exs:[{id:'I2a',title:'My 90-Day Income Goal',hint:'What specific additional income amount do you want to generate in the next 90 days?',rows:3},{id:'I2b',title:'My First Move',hint:'Write the exact action you will take — day, time, and the specific words you will use.',rows:4}],
+   hasSavingsGoal:true,
+   prompt:'I want to negotiate a salary increase. My current salary is [AMOUNT], I have been here [X] years, my key contributions are [LIST]. Write me a complete salary negotiation script.'},
+  {id:'I3',n:'3',title:'Side Hustle Launch Plan',sub:'From idea to first income in 30 days',
+   body:'The goal in 30 days is not to build a business — it is to generate your first payment. That first payment changes everything about what you believe is possible.',
+   call:{t:'coral',l:'The fastest path',x:'Service businesses (freelancing, consulting, coaching, tutoring) generate income fastest — zero product development needed.'},
+   exs:[{id:'I3a',title:'My Side Hustle Idea',hint:'What service or product could you offer? Who would pay for it? What would you charge?',rows:4},{id:'I3b',title:'My First 3 Potential Clients',hint:'Name 3 specific people or organisations who might pay for what you offer. What is your outreach plan?',rows:4},{id:'I3c',title:'My 30-Day Launch Checklist',hint:'List every step between now and your first paid client or sale.',rows:5}],
+   prompt:'I want to start a [TYPE] side hustle. My skills are [LIST]. I have [X hours/week]. Design a 30-day plan to get my first paying client — including daily actions for week 1, the exact outreach message, and how to price my service.'}
+ ]},
+{id:'F',lbl:'Stage 4',ico:'F',col:'#1E5F9A',name:'Financial Systems',days:'Days 46–60',short:'Financial Systems',
+ desc:'Willpower is unreliable. Systems are not. This stage builds automated financial infrastructure that works whether you feel motivated or not.',
+ mods:[
+  {id:'F1',n:'1',title:'The 5-Account Architecture',sub:'Structure your money so it manages itself',
+   body:'The 5-account system removes all decision-making from day-to-day spending. Enter your monthly income below and see exactly how to split it across the five accounts.',
+   call:{t:'',l:'The principle',x:'Once the system is set up, your money flows automatically every payday. You never have to decide where it goes — the decision is already made.'},
+   exs:[{id:'F1a',title:'My Automation Notes',hint:'Which accounts do you need to open? Which banks will you use? What obstacles might you face setting this up?',rows:4}],
+   hasAccounts:true,
+   prompt:'I earn [AMOUNT] net per month, paid on [DATE]. My fixed expenses are [LIST]. Design a complete 5-account automation system with specific amounts, transfer dates, and account recommendations for my country.'},
+  {id:'F2',n:'2',title:'Zero-Based Budget Calculator',sub:'Give every unit of income a job before the month begins',
+   body:'Enter your income and each expense below. The calculator shows you where your money goes, flags overspending, and tells you how much is left to allocate.',
+   call:{t:'teal',l:'The golden ratio',x:'50% needs · 30% wants · 20% savings and debt. This is a starting point. Adjust based on your goals.'},
+   exs:[{id:'F2a',title:'My Budget Observations',hint:'After running your budget below — what surprised you most? Where are the biggest opportunities?',rows:3}],
+   hasBudget:true,
+   prompt:'I earn [AMOUNT] net per month. My fixed expenses are [LIST]. Build me a complete zero-based budget that prioritises: (1) eliminating [DEBT] in [TIMEFRAME], (2) building a [AMOUNT] emergency fund, (3) investing [AMOUNT]/month.'},
+  {id:'F3',n:'3',title:'Debt Destruction Calculator',sub:'Snowball vs Avalanche — see your exact payoff date',
+   body:'Enter every debt below. The calculator runs both the Snowball and Avalanche strategies in real time and shows you exactly when you\'ll be debt-free and how much interest you\'ll save.',
+   call:{t:'coral',l:'The truth about debt',x:'Minimum payments are designed to keep you in debt for decades. One extra payment per month changes everything.'},
+   exs:[{id:'F3a',title:'My Payoff Commitment',hint:'Which strategy will you use and why? What will you do with the money once you are debt-free?',rows:3}],
+   hasDebt:true,
+   prompt:'I have these debts: [LIST EACH WITH BALANCE, RATE, MINIMUM]. I can put [AMOUNT] extra per month toward debt. Build me both a snowball and avalanche plan and recommend which to use based on my psychology.'}
+ ]},
+{id:'T',lbl:'Stage 5–6',ico:'T',col:'#C8923A',name:'Total Freedom',days:'Days 61–90',short:'Total Freedom',
+ desc:'Financial freedom is not a number. It is a feeling. This stage helps you define it, build toward it, and measure progress in a way that actually means something.',
+ mods:[
+  {id:'T1',n:'1',title:'Defining Your Financial Freedom',sub:'What does freedom actually mean for you?',
+   body:'Most people chase a number without knowing why. Name the feeling freedom buys for you, then work backwards to the number.',
+   call:{t:'',l:'The freedom question',x:'"If money were not a constraint, how would your daily life look different?" Not your holidays — your Tuesday morning. That answer tells you what you are really working toward.'},
+   exs:[{id:'T1a',title:'My Financial Freedom Vision',hint:'Describe your ideal financial life in vivid detail. Where are you? What do you do with your time? What are you free from?',rows:6},{id:'T1b',title:'My Freedom Number',hint:'What monthly income from any source would make you feel financially free?',rows:3},{id:'T1c',title:'My 5-Year Wealth Milestone',hint:'What specific measurable financial position do you want to be in 5 years?',rows:4}],
+   prompt:'I am [AGE], earning [AMOUNT]/year, with [AMOUNT] saved. My freedom vision is [DESCRIBE]. Create a realistic 5-year wealth roadmap with milestones at 1, 2, and 5 years.'},
+  {id:'T2',n:'2',title:'Net Worth Tracker',sub:'The only number that tells the whole story',
+   body:'Enter all your assets and liabilities below. Your net worth updates in real time. Track this monthly — the act of seeing the number is what changes behaviour.',
+   call:{t:'teal',l:'The compound effect',x:'A person who tracks their net worth monthly makes measurably better financial decisions. Visible progress sustains behaviour.'},
+   exs:[{id:'T2a',title:'My Net Worth Reflection',hint:'How do you feel about this number? What is the single action that would most improve it in the next 90 days?',rows:4}],
+   hasNetWorth:true,
+   prompt:'My current net worth is [AMOUNT] (assets: [LIST], liabilities: [LIST]). I want to reach [TARGET] within [TIMEFRAME]. What are the fastest levers I can pull?'},
+  {id:'T3',n:'3',title:'Your SHIFT Completion Plan',sub:'Lock in your habits and sustain the momentum',
+   body:'The difference between people who transform their finances and those who revert is a sustainable system that continues running after the 90 days end.',
+   call:{t:'coral',l:'The most important question',x:'"What will I do on Day 91?" The people who sustain transformation are those who already have an answer before Day 90 arrives.'},
+   exs:[{id:'T3a',title:'My Top 5 SHIFT Insights',hint:'Looking back across all 5 stages — what are the 5 most important things you have learned or changed?',rows:6},{id:'T3b',title:'My Ongoing System',hint:'List the 5 specific habits, rituals, and automations that will continue running after this workbook ends.',rows:5},{id:'T3c',title:'My Letter to Future Me',hint:'Write a letter to yourself to open in 12 months. Where are you now? What do you want for that future version?',rows:7}],
+   prompt:'I have just completed the SHIFT 90-Day framework. My biggest breakthroughs were [LIST]. My remaining challenges are [LIST]. Design a 12-month maintenance plan that keeps my systems running and wealth-building momentum growing.'}
+ ]},
+{id:'ritual',lbl:'Tools',ico:'⊙',col:'#C8923A',name:'Weekly Money Ritual',days:'20 min · Every week',short:'Weekly Ritual',
+ desc:'Schedule this every week on the same day and time. This 20-minute ritual is the engine of the entire SHIFT system.',
+ mods:[
+  {id:'R1',n:'1',title:'The 20-Minute Weekly CFO Session',sub:'Your non-negotiable weekly financial check-in',
+   body:'Give your finances 20 minutes of focused attention every week. No overwhelm, no marathon sessions, no willpower required.',
+   call:{t:'',l:'Schedule it now',x:'Before you read another word — open your calendar and block 20 minutes every week. Same day, same time. This is a meeting with your future self.'},
+   exs:[{id:'R1a',title:'My Ritual Day & Time',hint:'When will you do your weekly money ritual? What existing routine will you attach it to?',rows:2},{id:'R1b',title:"This Week's Money Review",hint:'WINS: What went well financially this week?\nLEAKS: Where did money go unexpectedly?\nADJUSTMENT: What one thing will you do differently next week?',rows:5},{id:'R1c',title:'My Financial Intention for Next Week',hint:'What is your single financial focus for the coming week?',rows:2}],
+   prompt:'It is my weekly money review. Income received: [AMOUNT]. Key expenses: [LIST]. Goal progress: [STATUS]. Analyse my week, identify the most important win to celebrate, the most important leak to address, and give me one specific action for next week.'}
+ ]},
+{id:'couples',lbl:'Bonus',ico:'♡',col:'#B84E35',name:'Couples Money Harmony',days:'Bonus guide',short:'Couples Guide',
+ desc:'Money is the number one cause of relationship conflict. This guide gives you and your partner a structured way to talk about money that builds connection rather than conflict.',
+ mods:[
+  {id:'C1',n:'1',title:'The Money Date',sub:'A monthly ritual for couples',
+   body:'Schedule a monthly Money Date — 60 minutes dedicated to your shared finances. No phones. No blame. Data and decisions only.',
+   call:{t:'',l:'The ground rules',x:'(1) Talk about "our money," never "your spending." (2) Data only — no accusations. (3) Equal airtime. (4) Decisions require both partners to agree. (5) End with something you are both excited about.'},
+   exs:[{id:'C1a',title:'Our Money Date Schedule',hint:'When will you hold your first Money Date? Who will prepare which numbers in advance?',rows:3},{id:'C1b',title:'Our Shared Financial Goals',hint:'List 3 financial goals you both genuinely want. For each: target amount, target date, and whose responsibility each action is.',rows:5},{id:'C1c',title:'Our Money Conversation Reflection',hint:'After your first Money Date — what went well? What was uncomfortable? What did you learn about your partner?',rows:5}],
+   prompt:'My partner and I have different money styles. I am more [YOUR STYLE] and they are more [THEIR STYLE]. We struggle with [SPECIFIC ISSUE]. Give us: (1) a 60-minute Money Date agenda, (2) 5 questions that build understanding, (3) a framework for making shared financial decisions.'}
+ ]}
+];
+
+var HABITS=[{id:'hb1',freq:'Daily',txt:'Log one financial transaction or decision (2 min)'},{id:'hb2',freq:'Daily',txt:'Open your bank balance — just look, no action required'},{id:'hb3',freq:'Weekly',txt:'Complete your 20-minute Money Ritual (same day, same time)'},{id:'hb4',freq:'Monthly',txt:'Review the month: wins, leaks, one adjustment'},{id:'hb5',freq:'Quarterly',txt:'Net worth update and goal progress review'}];
+
+// ── BUDGET STATE ──
+var budgetIncome=0;
+var budgetCategories=[
+  {name:'Housing / Rent',amount:0,type:'need'},
+  {name:'Food & Groceries',amount:0,type:'need'},
+  {name:'Transport',amount:0,type:'need'},
+  {name:'Utilities & Bills',amount:0,type:'need'},
+  {name:'Health & Medical',amount:0,type:'need'},
+  {name:'Clothing',amount:0,type:'want'},
+  {name:'Entertainment',amount:0,type:'want'},
+  {name:'Dining Out',amount:0,type:'want'},
+  {name:'Personal Care',amount:0,type:'want'},
+  {name:'Emergency Fund',amount:0,type:'save'},
+  {name:'Savings Goal',amount:0,type:'save'},
+  {name:'Investments',amount:0,type:'save'},
+  {name:'Debt Payments',amount:0,type:'debt'}
+];
+
+// ── DEBT STATE ──
+var debts=[];
+var extraPayment=0;
+
+// ── NET WORTH STATE ──
+var assets=[{name:'Cash & Savings',value:0},{name:'Investments',value:0},{name:'Property',value:0},{name:'Other Assets',value:0}];
+var liabilities=[{name:'Credit Card Debt',value:0},{name:'Student Loans',value:0},{name:'Car Finance',value:0},{name:'Other Loans',value:0}];
+
+// ── SUBS STATE ──
+var subs=[{name:'Netflix',amount:15,keep:true},{name:'Gym',amount:30,keep:true},{name:'Spotify',amount:10,keep:true},{name:'',amount:0,keep:true},{name:'',amount:0,keep:true}];
+
+// ── SAVINGS GOAL STATE ──
+var goalTarget=5000, goalSaved=0, goalMonthly=200;
+
+// ── PROGRESS ──
+function stagePct(s){
+  if(!s.mods||!s.mods.length) return 0;
+  var tot=0,fil=0;
+  s.mods.forEach(function(m){(m.exs||[]).forEach(function(e){tot++;if((gv(e.id)||'').trim().length>5)fil++;});});
+  return tot?Math.round(fil/tot*100):0;
+}
+function overallPct(){
+  var real=STAGES.filter(function(s){return s.mods&&s.mods.length;});
+  var tot=0,fil=0;
+  real.forEach(function(s){s.mods.forEach(function(m){(m.exs||[]).forEach(function(e){tot++;if((gv(e.id)||'').trim().length>5)fil++;});});});
+  return tot?Math.round(fil/tot*100):0;
+}
+
+// ── SIDEBAR ──
+var cur='welcome';
+function buildSB(){
+  var groups=[{lbl:'Framework stages',ids:['welcome','S','H','I','F','T']},{lbl:'Tools & bonuses',ids:['ritual','couples']}];
+  var h='';
+  groups.forEach(function(g){
+    h+='<div class="sb-grp">'+g.lbl+'</div>';
+    g.ids.forEach(function(sid){
+      var s=STAGES.find(function(x){return x.id===sid;});
+      if(!s)return;
+      var on=cur===sid;var done=completed[sid];var pct=stagePct(s);
+      h+='<button class="sb-btn'+(on?' on':'')+'" onclick="go(\''+sid+'\')">'
+        +'<div class="sb-ico" style="background:'+s.col+'22;color:'+s.col+'">'+s.ico+'</div>'
+        +'<div class="sb-info"><div class="sb-name">'+s.short+'</div><div class="sb-sub">'+s.days+(pct>0?' · '+pct+'%':'')+'</div></div>'
+        +'<div class="sb-dot'+(done?' done':'')+'">✓</div>'
+        +'</button>';
+    });
+  });
+  document.getElementById('sbnav').innerHTML=h;
+  var op=overallPct();
+  document.getElementById('opb').style.width=op+'%';
+  document.getElementById('opct').textContent=op+'% complete';
+}
+
+function go(sid){cur=sid;buildSB();render();if(window.innerWidth<=800)closeSB();window.scrollTo({top:0,behavior:'smooth'});}
+
+// ── MAIN RENDER ──
+function render(){
+  var s=STAGES.find(function(x){return x.id===cur;});
+  if(!s)return;
+  document.getElementById('tb-stage').textContent=s.lbl;
+  document.getElementById('tb-title').textContent=s.name;
+  if(s.id==='welcome'){document.getElementById('page').innerHTML=renderWelcome();return;}
+  var allReal=STAGES.filter(function(x){return x.mods&&x.mods.length;});
+  var idx=allReal.findIndex(function(x){return x.id===s.id;});
+  var prev=idx>0?allReal[idx-1]:null;
+  var next=idx<allReal.length-1?allReal[idx+1]:null;
+  var pct=stagePct(s);
+  var h='<div class="s-cover">'
+    +'<div class="s-ltr" style="color:'+s.col+'">'+s.ico+'</div>'
+    +'<div class="s-days">'+s.lbl+' · '+s.days+'</div>'
+    +'<div class="wb-sname">'+s.name+'</div>'
+    +'<div class="s-desc">'+s.desc+'</div>'
+    +'<div class="s-prog-row"><div class="s-prog-track"><div class="s-prog-fill" style="width:'+pct+'%"></div></div><div class="s-prog-lbl">'+pct+'% filled</div></div>'
+    +'</div>';
+  (s.mods||[]).forEach(function(m){
+    h+='<div class="mod"><div class="mod-hdr"><div class="mod-num" style="background:'+s.col+'18;color:'+s.col+'">'+m.n+'</div>'
+      +'<div><div class="mod-title">'+m.title+'</div><div class="mod-sub">'+m.sub+'</div></div></div>'
+      +'<p class="body-t">'+m.body+'</p>';
+    if(m.call)h+='<div class="callout '+m.call.t+'"><div class="c-lbl">'+m.call.l+'</div><div class="c-txt">'+m.call.x+'</div></div>';
+    if(m.hasAccounts)h+=renderAccountsTool();
+    if(m.hasBudget)h+=renderBudgetTool();
+    if(m.hasDebt)h+=renderDebtTool();
+    if(m.hasNetWorth)h+=renderNetWorthTool();
+    if(m.hasSavingsGoal)h+=renderSavingsGoal();
+    (m.exs||[]).forEach(function(e){
+      h+='<div class="ex"><div class="ex-lbl">Exercise</div><div class="ex-title">'+e.title+'</div>'
+        +'<div class="ex-hint">'+e.hint+'</div>'
+        +'<textarea id="ta_'+e.id+'" rows="'+e.rows+'" placeholder="Write your answer here..." oninput="autosave(\''+e.id+'\')">'+esc(gv(e.id))+'</textarea>'
+        +'<div class="ex-saved" id="si_'+e.id+'">Answers saved automatically</div></div>';
+    });
+    if(m.hasHabits)h+=renderHabits();
+    if(m.prompt){
+      var pid='cb_'+m.id;
+      h+='<div class="prompt-box"><div class="prompt-top"><span class="p-tag">AI Coaching Prompt</span>'
+        +'<button class="copy-btn" id="'+pid+'" onclick="copyP(\''+pid+'\',\''+encodeURIComponent(m.prompt)+'\')">Copy prompt</button></div>'
+        +'<div class="prompt-txt">'+m.prompt+'</div></div>';
+    }
+    h+='</div>';
+  });
+  h+='<div class="stage-nav">'
+    +'<button class="nav-btn" '+(prev?'onclick="go(\''+prev.id+'\')"':'disabled="true"')+'>'+(prev?'← '+prev.short:'← Back')+'</button>'
+    +'<button class="nav-btn primary" '+(next?'onclick="go(\''+next.id+'\')"':'disabled="true"')+'>'+(next?next.short+' →':'All complete ✓')+'</button>'
+    +'</div>';
+  document.getElementById('page').innerHTML=h;
+  if(s.id==='F') { setTimeout(updateBudgetDisplay,50); setTimeout(updateDebtDisplay,50); }
+  if(s.id==='T') setTimeout(updateNWDisplay,50);
+  if(s.id==='I') setTimeout(updateGoalDisplay,50);
+}
+
+function renderWelcome(){
+  var tiles=STAGES.filter(function(s){return['S','H','I','F','T'].includes(s.id);});
+  var h='<div class="welcome"><div class="wlc-mark">SHIFT</div><h1 class="wlc-h">Your 90-Day Money<br>Transformation</h1>'
+    +'<p class="wlc-p">This workbook is not a passive read. Every stage requires honesty, reflection, and small acts of courage. The exercises — and the live calculators — are the product.</p>'
+    +'<div class="stage-tiles">';
+  tiles.forEach(function(s){h+='<div class="tile" onclick="go(\''+s.id+'\')"><div class="tile-l" style="color:'+s.col+'">'+s.ico+'</div><div class="tile-n">'+s.short+'</div></div>';});
+  h+='</div><div class="how-card"><div class="how-lbl">How to use this workbook</div>'
+    +'<div class="how-row"><span>①</span>Complete each stage in order — they build on each other.</div>'
+    +'<div class="how-row"><span>②</span>Fill in every exercise. Thinking is not the same as writing.</div>'
+    +'<div class="how-row"><span>③</span>Use the live calculators — enter your real numbers and see real results.</div>'
+    +'<div class="how-row"><span>④</span>Copy AI prompts into ChatGPT or Claude for personalised coaching.</div>'
+    +'<div class="how-row"><span>⑤</span>The Weekly Ritual (20 min/week) is non-negotiable.</div>'
+    +'</div><button class="wb-startbtn" onclick="go(\'S\')">Begin Stage S — Self-Awareness →</button>'
+    +'<div style="background:var(--gold);border-radius:14px;padding:1.5rem 1.75rem;max-width:520px;margin:1.25rem auto 0;text-align:center">'
+    +'<div style="font-size:9px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.7);margin-bottom:.35rem">Own the full system</div>'
+    +'<div style="font-family:\'Cormorant Garamond\',serif;font-size:1.4rem;font-weight:700;color:#fff;margin-bottom:.35rem">SHIFT 90-Day System — $99</div>'
+    +'<div style="font-size:.8rem;color:rgba(255,255,255,.7);margin-bottom:.9rem">One-time payment · Instant access · Works in any country</div>'
+    +'<button onclick="goToCheckout()" style="background:#fff;color:var(--gold-d);border:none;border-radius:50px;padding:.65rem 1.75rem;font-size:.88rem;font-weight:700;cursor:pointer;font-family:\'Outfit\',sans-serif">Get Instant Access →</button>'
+    +'</div>'
+    +'</div>';
+  return h;
+}
+
+// ─── TOOL: 5-ACCOUNT ARCHITECTURE ──────────────────────────────────────────
+function renderAccountsTool(){
+  return '<div class="tool"><div class="tool-header"><span class="tool-title">5-Account Money System</span><span class="tool-badge">Live Calculator</span></div><div class="tool-body">'
+    +'<div class="tool-row"><div class="field"><label>Monthly Net Income</label><input type="number" id="acc-income" placeholder="e.g. 3000" oninput="updateAccounts()"></div></div>'
+    +'<div id="acc-display"><p style="font-size:.88rem;color:var(--subtle);text-align:center;padding:1.5rem">Enter your monthly income above to see your 5-account split.</p></div>'
+    +'</div></div>';
+}
+function updateAccounts(){
+  var inc=parseFloat(document.getElementById('acc-income').value)||0;
+  var el=document.getElementById('acc-display');
+  if(!inc){el.innerHTML='<p style="font-size:.88rem;color:var(--subtle);text-align:center;padding:1.5rem">Enter your monthly income above to see your 5-account split.</p>';return;}
+  var acc=[
+    {n:'1',name:'Income Account',desc:'All money arrives here — nothing spent from this account',pct:100,col:'#C8923A'},
+    {n:'2',name:'Fixed Bills Account',desc:'Rent, utilities, subscriptions — auto-debit only',pct:35,col:'#4A3EA0'},
+    {n:'3',name:'Living Expenses Account',desc:'Groceries, transport, daily spending — weekly transfer',pct:25,col:'#1F6B5E'},
+    {n:'4',name:'Savings & Emergency Fund',desc:'Auto-transfer on payday — treat as a non-negotiable bill',pct:20,col:'#1E5F9A'},
+    {n:'5',name:'Investments & Wealth',desc:'Everything above your emergency fund target flows here',pct:15,col:'#B84E35'}
+  ];
+  var h='<div class="income-flow"><div class="flow-label">Monthly net income</div><div class="flow-amount">'+fmt(inc)+'</div><div class="flow-note">Flows automatically from Account 1 every payday</div></div>';
+  acc.forEach(function(a,i){
+    var amt=i===0?inc:Math.round(inc*a.pct/100);
+    if(i>0)h+='<div class="acc-arrow"><svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M8 3v10M5 10l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>';
+    h+='<div class="account-card">'
+      +'<div class="acc-num" style="background:'+a.col+'22;color:'+a.col+'">'+a.n+'</div>'
+      +'<div class="acc-info"><div class="acc-name">'+a.name+'</div><div class="acc-desc">'+a.desc+'</div></div>'
+      +'<div class="acc-amount"><div class="acc-value">'+fmt(amt)+'</div><div class="acc-pct">'+(i===0?'100%':a.pct+'% of income')+'</div></div>'
+      +'</div>';
+  });
+  h+='<p style="font-size:.82rem;color:var(--subtle);margin-top:.75rem">Percentages are starting guidelines — adjust based on your fixed costs and goals.</p>';
+  el.innerHTML=h;
+}
+
+// ─── TOOL: ZERO-BASED BUDGET ─────────────────────────────────────────────────
+function renderBudgetTool(){
+  var cats={need:'Needs (housing, food, transport)',want:'Wants (lifestyle, entertainment)',save:'Savings & Investments',debt:'Debt Payments'};
+  var h='<div class="tool"><div class="tool-header"><span class="tool-title">Zero-Based Budget Calculator</span><span class="tool-badge">Live Calculator</span></div><div class="tool-body">'
+    +'<div class="tool-row"><div class="field"><label>Monthly Net Income</label><input type="number" id="b-income" placeholder="e.g. 3500" oninput="updateBudgetDisplay()"></div></div>'
+    +'<div class="tool-divider"></div>';
+  var types=['need','want','save','debt'];
+  types.forEach(function(t){
+    h+='<div style="margin-bottom:1rem"><div style="font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--subtle);margin-bottom:.6rem">'+cats[t]+'</div>';
+    budgetCategories.forEach(function(c,i){
+      if(c.type!==t)return;
+      h+='<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">'
+        +'<input type="text" value="'+esc(c.name)+'" style="flex:1;border:.5px solid var(--border);border-radius:7px;padding:.5rem .7rem;font-size:.85rem;font-family:Outfit,sans-serif;background:var(--bg)" oninput="budgetCategories['+i+'].name=this.value;updateBudgetDisplay()">'
+        +'<input type="number" value="'+(c.amount||'')+'" placeholder="0" style="width:90px;border:.5px solid var(--border);border-radius:7px;padding:.5rem .7rem;font-size:.85rem;font-family:Outfit,sans-serif;background:var(--bg);text-align:right" oninput="budgetCategories['+i+'].amount=parseFloat(this.value)||0;updateBudgetDisplay()">'
+        +'</div>';
+    });
+    h+='</div>';
+  });
+  h+='<div id="budget-results"></div></div></div>';
+  return h;
+}
+function updateBudgetDisplay(){
+  var inc=parseFloat(document.getElementById('b-income')?document.getElementById('b-income').value:0)||0;
+  var el=document.getElementById('budget-results');
+  if(!el)return;
+  var total=budgetCategories.reduce(function(s,c){return s+c.amount;},0);
+  var remaining=inc-total;
+  var needs=budgetCategories.filter(function(c){return c.type==='need';}).reduce(function(s,c){return s+c.amount;},0);
+  var wants=budgetCategories.filter(function(c){return c.type==='want';}).reduce(function(s,c){return s+c.amount;},0);
+  var saves=budgetCategories.filter(function(c){return c.type==='save';}).reduce(function(s,c){return s+c.amount;},0);
+  var debts=budgetCategories.filter(function(c){return c.type==='debt';}).reduce(function(s,c){return s+c.amount;},0);
+  var nPct=inc?Math.round(needs/inc*100):0;
+  var wPct=inc?Math.round(wants/inc*100):0;
+  var sPct=inc?Math.round(saves/inc*100):0;
+  var remClass=remaining<0?'bad':remaining===0?'good':'gold';
+  var bars=[
+    {label:'Needs',amt:needs,pct:inc?Math.min(needs/inc*100,100):0,col:'#4A3EA0'},
+    {label:'Wants',amt:wants,pct:inc?Math.min(wants/inc*100,100):0,col:'#1F6B5E'},
+    {label:'Savings',amt:saves,pct:inc?Math.min(saves/inc*100,100):0,col:'#C8923A'},
+    {label:'Debt',amt:debts,pct:inc?Math.min(debts/inc*100,100):0,col:'#B84E35'}
+  ];
+  var h='<div class="tool-divider"></div><div class="results-panel"><div class="results-title">Budget Summary</div>'
+    +'<div class="stat-grid cols3" style="margin-bottom:1rem">'
+    +'<div class="stat '+(nPct>55?'bad':'good')+'"><div class="stat-label">Needs</div><div class="stat-value">'+nPct+'%</div><div class="stat-note">Target: under 50%</div></div>'
+    +'<div class="stat '+(wPct>35?'bad':'good')+'"><div class="stat-label">Wants</div><div class="stat-value">'+wPct+'%</div><div class="stat-note">Target: under 30%</div></div>'
+    +'<div class="stat '+(sPct<15?'bad':'good')+'"><div class="stat-label">Savings</div><div class="stat-value">'+sPct+'%</div><div class="stat-note">Target: at least 20%</div></div>'
+    +'</div>'
+    +'<div class="stat-grid cols2" style="margin-bottom:1rem">'
+    +'<div class="stat"><div class="stat-label">Total Allocated</div><div class="stat-value">'+fmt(total)+'</div></div>'
+    +'<div class="stat '+remClass+'"><div class="stat-label">'+( remaining<0?'Over Budget':'Unallocated')+'</div><div class="stat-value">'+(remaining<0?'-':'')+fmt(Math.abs(remaining))+'</div><div class="stat-note">'+(remaining<0?'Reduce spending or increase income':remaining===0?'Perfect zero-based budget ✓':'Allocate this to savings or debt')+'</div></div>'
+    +'</div>'
+    +'<div class="bar-chart">';
+  bars.forEach(function(b){
+    if(!b.amt)return;
+    h+='<div class="bar-row"><div class="bar-label">'+b.label+'</div><div class="bar-track"><div class="bar-fill" style="width:'+b.pct+'%;background:'+b.col+'"></div></div><div class="bar-amt">'+fmt(b.amt)+'</div></div>';
+  });
+  h+='</div></div>';
+  el.innerHTML=h;
+}
+function budgetInc(type){budgetCategories.push({name:'',amount:0,type:type});render();}
+
+// ─── TOOL: DEBT CALCULATOR ──────────────────────────────────────────────────
+function renderDebtTool(){
+  var h='<div class="tool"><div class="tool-header"><span class="tool-title">Debt Payoff Calculator</span><span class="tool-badge">Snowball vs Avalanche</span></div><div class="tool-body">'
+    +'<div style="display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:flex-end;margin-bottom:.75rem">'
+    +'<div class="field"><label>Debt Name</label><input type="text" id="d-name" placeholder="e.g. Credit Card"></div>'
+    +'<div class="field"><label>Balance</label><input type="number" id="d-bal" placeholder="5000"></div>'
+    +'</div>'
+    +'<div style="display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:8px;align-items:flex-end;margin-bottom:1rem">'
+    +'<div class="field"><label>Interest Rate %</label><input type="number" id="d-rate" placeholder="18.5"></div>'
+    +'<div class="field"><label>Min Payment</label><input type="number" id="d-min" placeholder="100"></div>'
+    +'<div class="field"><label>Extra Monthly</label><input type="number" id="d-extra" placeholder="200" oninput="extraPayment=parseFloat(this.value)||0;updateDebtDisplay()"></div>'
+    +'<button class="tool-btn" onclick="addDebt()" style="margin-bottom:0;padding:.6rem 1rem">Add Debt</button>'
+    +'</div>'
+    +'<div id="debt-table-wrap"></div>'
+    +'<div id="debt-results"></div>'
+    +'</div></div>';
+  return h;
+}
+function addDebt(){
+  var name=document.getElementById('d-name').value||'Debt '+(debts.length+1);
+  var bal=parseFloat(document.getElementById('d-bal').value)||0;
+  var rate=parseFloat(document.getElementById('d-rate').value)||0;
+  var min=parseFloat(document.getElementById('d-min').value)||0;
+  if(!bal||!rate)return;
+  debts.push({name:name,balance:bal,rate:rate,min:min});
+  document.getElementById('d-name').value='';
+  document.getElementById('d-bal').value='';
+  document.getElementById('d-rate').value='';
+  document.getElementById('d-min').value='';
+  updateDebtDisplay();
+}
+function removeDebt(i){debts.splice(i,1);updateDebtDisplay();}
+function updateDebtDisplay(){
+  var tw=document.getElementById('debt-table-wrap');
+  var rw=document.getElementById('debt-results');
+  if(!tw||!rw)return;
+  if(!debts.length){tw.innerHTML='<p style="font-size:.88rem;color:var(--subtle);padding:.5rem 0">Add your debts above to see your payoff plan.</p>';rw.innerHTML='';return;}
+  var th='<table class="debt-table"><thead><tr><th>Debt</th><th>Balance</th><th>Rate</th><th>Min Payment</th><th></th></tr></thead><tbody>';
+  debts.forEach(function(d,i){
+    th+='<tr><td>'+esc(d.name)+'</td><td class="num">'+fmt(d.balance)+'</td><td class="num">'+d.rate+'%</td><td class="num">'+fmt(d.min)+'</td>'
+      +'<td><button class="del-btn" onclick="removeDebt('+i+')">✕</button></td></tr>';
+  });
+  th+='</tbody></table>';
+  tw.innerHTML=th;
+  // Calculate snowball and avalanche
+  var snow=calcPayoff('snowball');
+  var aval=calcPayoff('avalanche');
+  var totalDebt=debts.reduce(function(s,d){return s+d.balance;},0);
+  var better=aval.interest<snow.interest?'Avalanche':'Snowball';
+  var saved=Math.abs(snow.interest-aval.interest);
+  var h='<div class="tool-divider"></div><div class="results-panel"><div class="results-title">Payoff Comparison</div>'
+    +'<div class="stat-grid cols2" style="margin-bottom:1rem">'
+    +'<div style="background:var(--card);border:.5px solid var(--border);border-radius:10px;padding:1rem">'
+    +'<div style="font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--purple);font-weight:600;margin-bottom:.5rem">❄ Snowball Method</div>'
+    +'<div class="stat-label">Debt-free date</div><div style="font-family:Cormorant Garamond,serif;font-size:1.3rem;font-weight:700;color:var(--ink)">'+(snow.months?monthsToDate(snow.months):'—')+'</div>'
+    +'<div class="stat-label" style="margin-top:.5rem">Total interest</div><div style="font-family:Cormorant Garamond,serif;font-size:1.1rem;color:var(--coral);font-weight:700">'+fmt(snow.interest)+'</div>'
+    +'<div style="font-size:10px;color:var(--muted);margin-top:3px">Smallest balance first — fastest wins</div></div>'
+    +'<div style="background:var(--card);border:.5px solid var(--border);border-radius:10px;padding:1rem">'
+    +'<div style="font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:.5rem">🏔 Avalanche Method</div>'
+    +'<div class="stat-label">Debt-free date</div><div style="font-family:Cormorant Garamond,serif;font-size:1.3rem;font-weight:700;color:var(--ink)">'+(aval.months?monthsToDate(aval.months):'—')+'</div>'
+    +'<div class="stat-label" style="margin-top:.5rem">Total interest</div><div style="font-family:Cormorant Garamond,serif;font-size:1.1rem;color:var(--teal);font-weight:700">'+fmt(aval.interest)+'</div>'
+    +'<div style="font-size:10px;color:var(--muted);margin-top:3px">Highest rate first — saves most money</div></div>'
+    +'</div>'
+    +'<div class="payoff-result">'
+    +'<div class="pr-item"><div class="pr-label">Total Debt</div><div class="pr-value">'+fmt(totalDebt)+'</div></div>'
+    +'<div class="pr-item"><div class="pr-label">Extra Monthly</div><div class="pr-value">'+fmt(extraPayment||debts.reduce(function(s,d){return s+d.min;},0))+'</div></div>'
+    +'<div class="pr-item highlight"><div class="pr-label">Best Strategy</div><div class="pr-value">'+better+'</div><div class="pr-note">saves '+fmt(saved)+' in interest</div></div>'
+    +'<div class="pr-item"><div class="pr-label">Months to freedom</div><div class="pr-value">'+(aval.months||'—')+'</div></div>'
+    +'</div>'
+    +'</div>';
+  rw.innerHTML=h;
+}
+function calcPayoff(method){
+  if(!debts.length)return{months:0,interest:0};
+  var copies=debts.map(function(d){return{balance:d.balance,rate:d.rate/100/12,min:d.min,name:d.name};});
+  if(method==='snowball') copies.sort(function(a,b){return a.balance-b.balance;});
+  else copies.sort(function(a,b){return b.rate-a.rate;});
+  var extra=extraPayment||0;
+  var totalInterest=0;var months=0;var maxMonths=600;
+  while(copies.some(function(d){return d.balance>0;})&&months<maxMonths){
+    months++;
+    var freed=0;
+    copies.forEach(function(d){
+      if(d.balance<=0)return;
+      var interest=d.balance*d.rate;
+      totalInterest+=interest;
+      d.balance+=interest;
+    });
+    var remaining=extra;
+    copies.forEach(function(d){
+      if(d.balance<=0)return;
+      var pay=Math.min(d.min,d.balance);
+      d.balance-=pay;
+      if(d.balance<0)d.balance=0;
+    });
+    for(var i=0;i<copies.length;i++){
+      if(copies[i].balance>0){
+        var pay2=Math.min(remaining,copies[i].balance);
+        copies[i].balance-=pay2;remaining-=pay2;
+        if(remaining<=0)break;
+      }
+    }
+  }
+  return{months:months,interest:Math.round(totalInterest)};
+}
+function monthsToDate(m){
+  var d=new Date();d.setMonth(d.getMonth()+m);
+  return d.toLocaleDateString('en-GB',{month:'short',year:'numeric'});
+}
+
+// ─── TOOL: NET WORTH TRACKER ─────────────────────────────────────────────────
+function renderNetWorthTool(){
+  var h='<div class="tool"><div class="tool-header"><span class="tool-title">Net Worth Tracker</span><span class="tool-badge">Live Calculator</span></div><div class="tool-body">'
+    +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem">'
+    +'<div><div class="nw-section-label" style="background:var(--teal-l);color:var(--teal)">Assets — What you own</div>'
+    +'<div id="nw-assets">';
+  assets.forEach(function(a,i){
+    h+='<div class="nw-item-row"><input type="text" value="'+esc(a.name)+'" placeholder="Asset name" oninput="assets['+i+'].name=this.value">'
+      +'<input type="number" value="'+(a.value||'')+'" placeholder="0" oninput="assets['+i+'].value=parseFloat(this.value)||0;updateNWDisplay()" style="text-align:right">'
+      +'<button class="nw-del" onclick="assets.splice('+i+',1);renderNWRows()">✕</button></div>';
+  });
+  h+='</div><button class="add-row-btn" onclick="assets.push({name:\'\',value:0});renderNWRows()">+ Add asset</button></div>'
+    +'<div><div class="nw-section-label" style="background:var(--coral-l);color:var(--coral)">Liabilities — What you owe</div>'
+    +'<div id="nw-liabilities">';
+  liabilities.forEach(function(l,i){
+    h+='<div class="nw-item-row"><input type="text" value="'+esc(l.name)+'" placeholder="Liability name" oninput="liabilities['+i+'].name=this.value">'
+      +'<input type="number" value="'+(l.value||'')+'" placeholder="0" oninput="liabilities['+i+'].value=parseFloat(this.value)||0;updateNWDisplay()" style="text-align:right">'
+      +'<button class="nw-del" onclick="liabilities.splice('+i+',1);renderNWRows()">✕</button></div>';
+  });
+  h+='</div><button class="add-row-btn" onclick="liabilities.push({name:\'\',value:0});renderNWRows()">+ Add liability</button></div>'
+    +'</div><div id="nw-result"></div></div></div>';
+  return h;
+}
+function renderNWRows(){
+  var ah=document.getElementById('nw-assets');
+  var lh=document.getElementById('nw-liabilities');
+  if(!ah||!lh)return;
+  var a='';
+  assets.forEach(function(a2,i){
+    a+='<div class="nw-item-row"><input type="text" value="'+esc(a2.name)+'" placeholder="Asset name" oninput="assets['+i+'].name=this.value">'
+      +'<input type="number" value="'+(a2.value||'')+'" placeholder="0" oninput="assets['+i+'].value=parseFloat(this.value)||0;updateNWDisplay()" style="text-align:right">'
+      +'<button class="nw-del" onclick="assets.splice('+i+',1);renderNWRows()">✕</button></div>';
+  });
+  ah.innerHTML=a;
+  var l='';
+  liabilities.forEach(function(l2,i){
+    l+='<div class="nw-item-row"><input type="text" value="'+esc(l2.name)+'" placeholder="Liability name" oninput="liabilities['+i+'].name=this.value">'
+      +'<input type="number" value="'+(l2.value||'')+'" placeholder="0" oninput="liabilities['+i+'].value=parseFloat(this.value)||0;updateNWDisplay()" style="text-align:right">'
+      +'<button class="nw-del" onclick="liabilities.splice('+i+',1);renderNWRows()">✕</button></div>';
+  });
+  lh.innerHTML=l;
+  updateNWDisplay();
+}
+function updateNWDisplay(){
+  var el=document.getElementById('nw-result');
+  if(!el)return;
+  var totalA=assets.reduce(function(s,a){return s+a.value;},0);
+  var totalL=liabilities.reduce(function(s,l){return s+l.value;},0);
+  var nw=totalA-totalL;
+  var nwCol=nw>=0?'#C8923A':'#B84E35';
+  var h='<div class="tool-divider"></div>'
+    +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">'
+    +'<div class="nw-total" style="background:var(--teal-l);color:var(--teal)"><span>Total Assets</span><span style="font-family:Cormorant Garamond,serif;font-size:1.3rem;font-weight:700">'+fmt(totalA)+'</span></div>'
+    +'<div class="nw-total" style="background:var(--coral-l);color:var(--coral)"><span>Total Liabilities</span><span style="font-family:Cormorant Garamond,serif;font-size:1.3rem;font-weight:700">'+fmt(totalL)+'</span></div>'
+    +'</div>'
+    +'<div class="nw-big"><div class="nw-big-label">Your Net Worth Today</div>'
+    +'<div class="nw-big-value" style="color:'+nwCol+'">'+fmt(nw)+'</div>'
+    +'<div class="nw-big-note">'+(nw>=0?'Assets exceed liabilities — you are building wealth.':'Liabilities exceed assets — reducing debt is your primary lever.')+'</div>'
+    +'</div>';
+  if(assets.some(function(a){return a.value>0;})){
+    h+='<div class="bar-chart" style="margin-top:1rem">';
+    assets.forEach(function(a){
+      if(!a.value||!a.name)return;
+      var pct=totalA?Math.min(a.value/totalA*100,100):0;
+      h+='<div class="bar-row"><div class="bar-label">'+esc(a.name)+'</div><div class="bar-track"><div class="bar-fill" style="width:'+pct+'%;background:var(--teal)"></div></div><div class="bar-amt">'+fmt(a.value)+'</div></div>';
+    });
+    h+='</div>';
+  }
+  el.innerHTML=h;
+}
+
+// ─── TOOL: SAVINGS GOAL PLANNER ────────────────────────────────────────────
+function renderSavingsGoal(){
+  return '<div class="tool"><div class="tool-header"><span class="tool-title">Savings Goal Planner</span><span class="tool-badge">Live Calculator</span></div><div class="tool-body">'
+    +'<div class="tool-row cols3">'
+    +'<div class="field"><label>Goal Target</label><input type="number" id="sg-target" value="5000" placeholder="5000" oninput="goalTarget=parseFloat(this.value)||0;updateGoalDisplay()"></div>'
+    +'<div class="field"><label>Already Saved</label><input type="number" id="sg-saved" value="0" placeholder="0" oninput="goalSaved=parseFloat(this.value)||0;updateGoalDisplay()"></div>'
+    +'<div class="field"><label>Monthly Saving</label><input type="number" id="sg-monthly" value="200" placeholder="200" oninput="goalMonthly=parseFloat(this.value)||0;updateGoalDisplay()"></div>'
+    +'</div>'
+    +'<div id="sg-result"></div>'
+    +'</div></div>';
+}
+function updateGoalDisplay(){
+  var el=document.getElementById('sg-result');
+  if(!el)return;
+  var target=parseFloat(document.getElementById('sg-target')?document.getElementById('sg-target').value:goalTarget)||goalTarget;
+  var saved=parseFloat(document.getElementById('sg-saved')?document.getElementById('sg-saved').value:goalSaved)||0;
+  var monthly=parseFloat(document.getElementById('sg-monthly')?document.getElementById('sg-monthly').value:goalMonthly)||goalMonthly;
+  var remaining=Math.max(0,target-saved);
+  var months=monthly>0?Math.ceil(remaining/monthly):999;
+  var pct=target>0?Math.min(Math.round(saved/target*100),100):0;
+  var doneDate=new Date();doneDate.setMonth(doneDate.getMonth()+months);
+  var h='<div class="tool-divider"></div><div class="goal-progress">'
+    +'<div style="display:flex;justify-content:space-between;font-size:.88rem;font-weight:500;margin-bottom:.5rem"><span>Progress to goal</span><span style="color:var(--gold)">'+pct+'%</span></div>'
+    +'<div class="goal-bar-track"><div class="goal-bar-fill" style="width:'+pct+'%">'+(pct>10?'<span class="goal-bar-pct">'+pct+'%</span>':'')+'</div></div>'
+    +'<div class="milestone-row"><span>0</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>'
+    +'</div>'
+    +'<div class="stat-grid cols3" style="margin-top:1rem">'
+    +'<div class="stat gold"><div class="stat-label">Still Needed</div><div class="stat-value">'+fmt(remaining)+'</div></div>'
+    +'<div class="stat '+(months>36?'bad':'good')+'"><div class="stat-label">Months to Goal</div><div class="stat-value">'+(months<999?months:'—')+'</div></div>'
+    +'<div class="stat"><div class="stat-label">Goal Reached</div><div class="stat-value" style="font-size:1.15rem">'+(months<999?doneDate.toLocaleDateString('en-GB',{month:'short',year:'numeric'}):'Increase saving')+'</div></div>'
+    +'</div>';
+  if(monthly>0&&remaining>0){
+    var scenarios=[
+      {label:'Current pace',m:monthly,col:'var(--subtle)'},
+      {label:'10% more',m:Math.round(monthly*1.1),col:'var(--blue)'},
+      {label:'25% more',m:Math.round(monthly*1.25),col:'var(--teal)'},
+      {label:'Double',m:monthly*2,col:'var(--gold)'}
+    ];
+    h+='<div style="margin-top:1rem"><div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--subtle);font-weight:600;margin-bottom:.6rem">What if you saved more?</div>'
+      +'<div class="bar-chart">';
+    var maxM=scenarios[scenarios.length-1].m;
+    scenarios.forEach(function(sc){
+      var scMonths=sc.m>0?Math.ceil(remaining/sc.m):999;
+      var barW=maxM>0?Math.min(sc.m/maxM*100,100):0;
+      h+='<div class="bar-row"><div class="bar-label">'+sc.label+' ('+fmt(sc.m)+'/mo)</div><div class="bar-track"><div class="bar-fill" style="width:'+barW+'%;background:'+sc.col+'"></div></div><div class="bar-amt">'+scMonths+' mo</div></div>';
+    });
+    h+='</div></div>';
+  }
+  el.innerHTML=h;
+}
+
+// ─── HABIT TRACKER ───────────────────────────────────────────────────────────
+function renderHabits(){
+  var h='<div style="margin-top:1.25rem"><div style="font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--subtle);font-weight:600;margin-bottom:.65rem">The 5 Core Financial Habits — Check off today</div>';
+  HABITS.forEach(function(hb){
+    h+='<div class="habit-row-t"><span class="h-freq">'+hb.freq+'</span><span class="h-txt">'+hb.txt+'</span>'
+      +'<div class="h-chk'+(habits[hb.id]?' on':'')+'" id="hc_'+hb.id+'" onclick="toggleH(\''+hb.id+'\')">✓</div></div>';
+  });
+  h+='</div>';
+  return h;
+}
+function toggleH(id){habits[id]=!habits[id];var el=document.getElementById('hc_'+id);if(el)el.className='h-chk'+(habits[id]?' on':'');}
+
+// ─── UTILS ───────────────────────────────────────────────────────────────────
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function autosave(id){
+  var el=document.getElementById('ta_'+id);var si=document.getElementById('si_'+id);
+  if(!el||!si)return;
+  sv(id,el.value);si.textContent='Saved ✓';si.className='ex-saved ok';buildSB();
+  setTimeout(function(){si.textContent='Answers saved automatically';si.className='ex-saved';},1800);
+}
+function copyP(btnId,encoded){
+  var txt=decodeURIComponent(encoded);var btn=document.getElementById(btnId);
+  function done(){btn.textContent='Copied! ✓';btn.className='copy-btn ok';setTimeout(function(){btn.textContent='Copy prompt';btn.className='copy-btn';},2500);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done).catch(function(){fb(txt);done();});}
+  else{fb(txt);done();}
+}
+function fb(txt){var ta=document.createElement('textarea');ta.value=txt;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);}
+function markDone(){completed[cur]=true;buildSB();}
+function resetStage(){
+  var s=STAGES.find(function(x){return x.id===cur;});
+  if(!s||!confirm('Clear all answers for this stage?'))return;
+  (s.mods||[]).forEach(function(m){(m.exs||[]).forEach(function(e){sv(e.id,'');});});
+  delete completed[cur];buildSB();render();
+}
+function toggleSB(){document.getElementById('sb').classList.toggle('open');document.getElementById('ov').classList.toggle('show');}
+function closeSB(){document.getElementById('sb').classList.remove('open');document.getElementById('ov').classList.remove('show');}
+
+// ─── OWNER BANNER ────────────────────────────────────────────────────────────
+var checkoutLink='';
+var checkoutPlatform='';
+
+function saveCheckoutLink(){
+  var url=document.getElementById('ob-link').value.trim();
+  var platform=document.getElementById('ob-platform').value;
+  var status=document.getElementById('ob-status');
+  if(!url){status.textContent='Please paste your checkout URL first.';status.className='ob-status err';return;}
+  if(!url.startsWith('http')){status.textContent='URL must start with https://';status.className='ob-status err';return;}
+  checkoutLink=url;
+  checkoutPlatform=platform;
+  var platformName=platform?document.getElementById('ob-platform').options[document.getElementById('ob-platform').selectedIndex].text:'';
+  status.textContent='✓ '+(platformName||'Checkout')+' link saved. Your "Unlock" buttons are now live.';
+  status.className='ob-status ok';
+  // Update sidebar upsell button
+  var upsell=document.querySelector('.sb-upsell');
+  if(upsell){upsell.textContent='Get the SHIFT System — $99 →';upsell.onclick=function(){goToCheckout();};}
+  setTimeout(function(){status.textContent='';},5000);
+}
+
+function goToCheckout(){
+  if(checkoutLink){window.open(checkoutLink,'_blank');}
+  else{
+    document.getElementById('ob-link').focus();
+    var status=document.getElementById('ob-status');
+    status.textContent='Paste your checkout link above first, then click Save.';
+    status.className='ob-status err';
+    setTimeout(function(){status.textContent='';},4000);
+  }
+}
+
+function closeBanner(){
+  document.getElementById('owner-banner').classList.add('hidden');
+}
+function checkout(key){ openWorkbook(); }
+
+(function(){
+  SCREEN_IDS.forEach(function(s){ var el=document.getElementById(s); if(el) el.style.display='none'; });
+  var land=document.getElementById('screen-landing');
+  if(land) land.style.display='block';
+})();
+
+</script>
+</body>
+</html>
